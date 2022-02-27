@@ -6,6 +6,62 @@
 <br>
 <br>
 
+## [Ethereum Development Key Concepts](https://medium.com/compound-finance/setting-up-an-ethereum-development-environment-7c387664c5fe)
+
+<br>
+
+##### Setting up your dev environment for Ethereum development takes just a few minutes. It’s important to have a basic understanding of a few general concepts before we start writing code.
+
+<br>
+
+**Solidity** - The most popular programming language for writing smart contracts on Ethereum.
+
+<br>
+
+**Web3.js** - A JavaScript library for web browsers and Node.js that enables developers to elegantly read and write to the Ethereum blockchain. Smart contracts written in Solidity can be executed using JSON RPC from Web3.js.
+
+<br>
+
+**Infura.io** - A company that provides an API for simple Ethereum network access through HTTP and WebSockets. To access the network without a service like Infura’s API, you must host your own Ethereum network node.
+
+<br>
+
+> ✋ **Ethereum Networks** ✋ - The Ethereum Main Network (a.k.a Homestead) is considered to be the production environment. This is where real Ether (ETH) can be exchanged, burned, and mined. Also, there are popular public test networks: Ropsten, Göerli, Kovan, and **Rinkeby** ✋. All of these networks can be accessed via Infura’s API.
+
+<br>
+
+**Cloudflare’s Ethereum Gateway** - Cloudflare, a popular DNS and general web-infrastructure company provides a free API for accessing the Ethereum Main Net. Unlike Infura, Cloudflare’s gateway can be used without an account or API. The network can be interfaced with at https://cloudflare-eth.com. However, you can interface with only Homestead; not Ropsten, Göerli, Kovan, or Rinkeby.
+
+<br>
+
+**Truffle** - A company that creates Ethereum development tools like Truffle, Ganache, and Drizzle. In this guide, we’ll be installing Ganache CLI so we can run our Solidity and Web3.js code locally during development.
+
+<br>
+
+**Ganache CLI** - A command line interface for running a locally hosted instance of Ethereum. We can start up a blank Ethereum blockchain, or a fork of a public network’s blockchain on your local machine.
+
+<br>
+
+**Solc** - The Solidity compiler. This turns our human-readable Solidity code into Ethereum bytecode, which Ethereum network nodes understand how to execute.
+
+<br>
+
+**MetaMask** - A web browser extension that facilitates invocation of Ethereum smart contracts from a web page. MetaMask uses Web3.js under the hood. It is a tool for end users to use ETH, Ethereum based cryptocurrency tokens, and keep track of their Ethereum wallets when using decentralized, Web3 applications (a.k.a. DApps).
+
+<br
+
+#### Installing MetaMask
+
+> MetaMask is a web browser extension that can be installed on Google Chrome, FireFox, Opera, or Brave. End users can use the extension to interface with smart contracts.>
+
+<br>
+<br>
+
+---
+
+<br>
+<br>
+
 # 🍨
 
 ### 1. Get free Ethereum for testing purposes
@@ -103,7 +159,11 @@ https://bitcoinsprice.org/price/eth/usd/0.1994
 <br>
 <br>
 
-#### 7.
+#### 7. Create the project and confirm it (inside the pop up)
+
+<br>
+
+[<img src="/src/img/ether-project.gif"/>](https://faucets.chain.link/rinkeby)
 
 <br>
 <br>
