@@ -10,7 +10,23 @@
 
 ### 1. Get free Ethereum for testing purposes
 
-[faucets.chain.link/rinkeby](https://faucets.chain.link/rinkeby)
+> The reason why we need this, is because we are going to **mint** our project, and due to that we will not need to pay gaz feeds
+
+<br>
+
+#### [faucets.chain.link/rinkeby](https://faucets.chain.link/rinkeby)
+
+<br>
+
+**Cryptocurrency transactions** are grouped in what is known as a block. Block size varies between blockchains. For example, Bitcoin's block size has a theoretical limit of 4MB but averages closer to 1MB.
+
+<br>
+
+**Unlike Bitcoin, Ethereum's block size varies based upon the amount of gas spent per block rather than a data limit.** Currently, there is a 30 million gas limit per block, but the target size is 15 million gas per block. But effectively, your transaction "competes" with others to feature in the next block sent to the network for validation. So, your competitor might pay a priority fee (tip) to increase the chance of pushing their transaction ahead of yours, increasing the gas fee.
+
+<br>
+
+##### Read more [9 Ways to Reduce Your Ethereum Gas Fees](https://www.makeuseof.com/ways-reduce-ethereum-gas-fees/)
 
 <br>
 
@@ -50,7 +66,7 @@
 
 <br>
 
-#### 5. After that send the request
+#### 5. After that, send the request:
 
 - You will see something like this:
 
@@ -72,3 +88,27 @@
 - 0.2 test ethers..
 
 [<img src="/src/img/free-ethereum-metamask.gif"/>](https://faucets.chain.link/rinkeby)
+
+<br>
+<br>
+
+## 🥭
+
+#### this is what we have, of course 'ours' is fake:
+
+> 0.1994 ETH
+
+https://bitcoinsprice.org/price/eth/usd/0.1994
+
+<br>
+<br>
+
+#### 7.
+
+<br>
+<br>
+
+---
+
+<br>
+<br>
