@@ -64,3 +64,11 @@
 
 [<img src="/src/img/free-ethereum-success.webp
 "/>](https://faucets.chain.link/rinkeby)
+
+<br>
+
+### inside the metamask you should have:
+
+- 0.2 test ethers..
+
+[<img src="/src/img/free-ethereum-metamask.gif"/>](https://faucets.chain.link/rinkeby)
