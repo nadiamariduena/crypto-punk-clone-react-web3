@@ -47,3 +47,20 @@
 <br>
 
 [<img src="/src/img/uncheck_10_test.webp"/>](https://faucets.chain.link/rinkeby)
+
+<br>
+
+#### 5. After that send the request
+
+- You will see something like this:
+
+[<img src="/src/img/transaction-initiated.webp"/>](https://faucets.chain.link/rinkeby)
+
+<br>
+
+#### 6. Once its done, you will receive a token:
+
+- i am hiding mine, that s why you cannot seeit
+
+[<img src="/src/img/free-ethereum-success.webp
+"/>](https://faucets.chain.link/rinkeby)
