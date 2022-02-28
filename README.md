@@ -70,4 +70,34 @@
 <br>
 <br>
 
-#### 5. Connect to a Wallet
+### 5. Connect to a Wallet
+
+<br>
+
+- Once you choose to connect to **metamask**, choose the test account you just created.
+
+<br>
+
+- ⚠️ It will ask you to continue, but before check that your **ETH** is in **Rinkeby**, then choose **Rinkeby** again
+
+<br>
+
+- After that you will have a **successful message** and then it will ask you to **create a first project on Rinkeby**
+
+<br>
+
+[<img src="/src/img/connect-to-rinkeby.gif"/>]()
+
+<br>
+
+### 🔴 Now you are ready to start the project but we dont have <u>ETH</u>
+
+- for this project I will be using fake **Eth**
+
+<br>
+<br>
+
+---
+
+<br>
+<br>
