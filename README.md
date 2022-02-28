@@ -4,9 +4,18 @@
 
 ##### [MetaMask setup](https://www.creatokia.com/en/s/metamask-setup)
 
+##### [METAMASK EXPLAINED! All you need to know about wallets!](https://youtu.be/03CxRvOa4E0)
+
+<br>
 <br>
 
-> Once you have the parent metamask setup (with the long phrase and password), then you can start here:
+### Seed Phrase 🔑
+
+- Click on the image to see more: 🐖
+
+[<img src="/src/img/seed-phrase.gif"/>](https://youtu.be/03CxRvOa4E0)
+
+> Once you have the parent metamask setup (with the long **seed** phrase and password), then you can start here:
 
 <br>
 <br>
