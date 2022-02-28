@@ -234,8 +234,7 @@
 
 - i am hiding mine, that s why you cannot see it
 
-[<img src="/src/img/free-ethereum-success.webp
-"/>](https://faucets.chain.link/rinkeby)
+[<img src="/src/img/free-ethereum-success.webp"/>](https://faucets.chain.link/rinkeby)
 
 <br>
 
