@@ -42,3 +42,14 @@
 <br>
 
 [<img src="/src/img/rinkeby-network.gif"/>]()
+
+<br>
+<br>
+
+##### 4. Once You choose the network, go to the top and click on the <u>SHOW/HIDE</u>, you will then have to scroll down and click on the toggle: <u>TURN/ON</u> like in the gif, after you turned it ON, go up and choose your "Rinkeby" network as it s now available.
+
+<br>
+
+[<img src="/src/img/rinkeby-network3.gif"/>]()
+
+<br>
