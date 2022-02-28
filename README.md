@@ -1,6 +1,12 @@
 <br>
 
-> Before starting create a new metamask account as the one we will create here below will be a children account. Once you have the parent metamask set up (with the long phrase password and password), then you can start here:
+> Before starting create a new metamask account as the one we will create here below will be a children account.
+
+##### [MetaMask setup](https://www.creatokia.com/en/s/metamask-setup)
+
+<br>
+
+> Once you have the parent metamask setup (with the long phrase and password), then you can start here:
 
 <br>
 <br>
@@ -53,3 +59,6 @@
 [<img src="/src/img/rinkeby-network3.gif"/>]()
 
 <br>
+<br>
+
+#### 5. Connect to a Wallet
