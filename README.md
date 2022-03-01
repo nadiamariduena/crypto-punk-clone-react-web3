@@ -60,3 +60,45 @@ export default App;
 #### Create the folder assets, there you will store the images related to the logo
 
 ##### Download Assets: [here](https://drive.google.com/drive/folder...)
+
+<br>
+<br>
+
+#### Add the logo to the header and then resize it
+
+```javascript
+import React from "react";
+
+import punkaLogo from "./assets/header/cryptopunk-logo.png";
+
+const Header = () => {
+  return (
+    <div className="header">
+      <div className="logoContainer">
+        <img src={punkaLogo} className="imgBox-punkLogo" alt={punkaLogo} />
+      </div>
+    </div>
+  );
+};
+
+export default Header;
+```
+
+#### resize
+
+```scss
+.header {
+  h2 {
+    color: rgb(0, 60, 255);
+  }
+  //
+  // LOGO
+  .imgBox-punkLogo {
+    width: 200px;
+  }
+}
+```
+
+<br>
+
+#### The search-bar
