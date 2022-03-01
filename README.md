@@ -66,7 +66,28 @@ Before you move on to making your claims on NFTs, it would be a wise idea to get
 
 Alternatively, we can refer to NFT minting as the process used for transforming digital art or content into a part of the Ethereum Blockchain. The process is similar to minting metal coins and putting them into circulation.
 
+> NFTs are minted after they’re created. The process turns a simple file into a crypto asset that can be traded or bought via cryptocurrencies on a digital marketplace.
+
 <br>
+
+**While minting NFTs, the creator of the NFT can plan royalties from every subsequent sale. This way, the creator receives a commission when the NFT is bought or traded on the secondary market.** ✋
+
+<br>
+
+##### Credit Article: [Minting NFT vs. Buying NFT / nuwireinvestor](https://www.nuwireinvestor.com/minting-nft-vs-buying-nft/)
+
+<br>
+
+### Make Sure Your Wallet is Funded
+
+Selling an NFT requires computing. Transactions involving NFTs and cryptocurrencies will cost some money in the form of gas fees. To complete your first transaction, ensure that you have Ethereum deposited in your wallet.
+
+Depending on the marketplace you chose for the NFT minting process, you can transfer the cryptocurrency from your wallet to the marketplace. Some marketplaces require you to purchase the crypto from their profile right after you’ve minted the first NFT.
+
+List Your NFT for Sale
+Once you are done minting your NFT, you can sell it in the market. Simply click on the Sell button on the description page. When you put up the sale, it is time to specify all the required details. Select the type of sale, whether it is a fixed price or a timed auction.
+
+The next step would be to click on ‘Complete Listing’. The marketplace calculates the fees based on the cryptocurrency’s network at the time of listing the sale. And then, request payment from your wallet.
 
 <br>
 
