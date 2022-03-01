@@ -1,6 +1,11 @@
+#### If you already have all the steps below: just log in:
+
+##### [Signup for thirdweb](https://bit.ly/3EJLftx)
+
+<br>
 <br>
 
-> Before starting create a new metamask account as the one we will create here below will be a children account.
+##### Before starting create a new metamask account as the one we will create here below will be a children account.
 
 ##### [MetaMask setup](https://www.creatokia.com/en/s/metamask-setup)
 
@@ -15,7 +20,9 @@
 
 [<img src="/src/img/seed-phrase.gif"/>](https://youtu.be/03CxRvOa4E0)
 
-> Once you have the parent metamask setup (with the long **seed** phrase and password), then you can start here:
+<br>
+
+#### Once you have the parent metamask setup (with the long **seed** phrase and password), then you can start here:
 
 <br>
 <br>
@@ -267,7 +274,26 @@ https://bitcoinsprice.org/price/eth/usd/0.1994
 <br>
 <br>
 
----
+# 🥥
+
+#### 8. In the next step we will be creating a new module
 
 <br>
+
+> As you can see here below, we have **6 different** options:
+
 <br>
+
+- You can create your own **Crypto currency** inside the **TOKEN module** , (you can call it whatever you want..cookieMonsta 🍪 etc)
+
+<br>
+
+- You can also build your own **marketplace**, you can build your own **opensea** ([What is OpenSea? The Marketplace For NFT Artwork](https://youtu.be/uBN6B99Mzx4))
+
+<br>
+
+#### In my case, I am are interested in the "NFT Collection " module
+
+- So click on **NFT Collection**, and then click on the blue button **Setup Module**
+
+[<img src="/src/img/create_nft_collection.gif"/>]()
