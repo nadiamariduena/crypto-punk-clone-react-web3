@@ -53,3 +53,7 @@ function App() {
 
 export default App;
 ```
+
+<br>
+
+#### Create the folder assets, there you will store the images related to the logo

@@ -3,7 +3,9 @@ import React from "react";
 const Header = () => {
   return (
     <div className="header">
-      <h2>header</h2>
+      <div className="logoContainer">
+        <img src={punkaLogo} className="imgBox-punkLogo" alt={punkaLogo} />
+      </div>
     </div>
   );
 };
