@@ -5,7 +5,85 @@
 <br>
 <br>
 
-##### Before starting create a new metamask account as the one we will create here below will be a children account.
+---
+
+<br>
+<br>
+
+### WHAT’S AN NFT?
+
+NFTs allow you to buy and sell ownership of unique digital items and keep track of who owns them using the blockchain. NFT stands for “non-fungible token,” and it can technically contain anything digital, including drawings, animated GIFs, songs, or items in video games. An NFT can either be one-of-a-kind, like a real-life painting, or one copy of many, like trading cards, but the blockchain keeps track of who has ownership of the file.
+
+NFTs have been making headlines lately, some selling for millions of dollars, with high-profile memes like Nyan Cat and the “deal with it” sunglasses being put up for auction. There’s also a lot of discussion about the massive electricity use and environmental impacts of NFTs. If you (understandably) still have questions, you can read through our [ NFT FAQ](https://www.theverge.com/22310188/nft-explainer-what-is-blockchain-crypto-art-faq).
+
+<br>
+
+##### Article credits: [THE CLIMATE CONTROVERSY SWIRLING AROUND NFTS / theverge ](https://www.theverge.com/2021/3/15/22328203/nft-cryptoart-ethereum-blockchain-climate-change)
+
+<br>
+<br>
+
+### Bitcoin Mining
+
+<br>
+
+- Bitcoin mining is the process of creating new bitcoin by solving a computational puzzle.
+
+- Bitcoin mining is necessary to maintain the ledger of transactions upon which Bitcoin is based.
+
+- Miners have become very sophisticated over the past several years, using complex machinery to speed up mining operations.
+
+- Bitcoin mining has generated controversy because it is not considered environmentally friendly.
+
+<br>
+
+> **Bitcoin mining is the process of creating new bitcoin by solving puzzles. It consists of computing systems equipped with specialized chips competing to solve mathematical puzzles.** <br> <br> The first bitcoin miner (as these systems are called) to solve the puzzle is rewarded with bitcoin. **The mining process also confirms transactions on the cryptocurrency's network and makes them trustworthy.**
+
+<br>
+
+##### Credit Article: [Bitcoin Mining/ Investopedia](https://www.investopedia.com/terms/b/bitcoin-mining.asp#:~:text=Key%20Takeaways-,Bitcoin%20mining%20is%20the%20process%20of%20creating%20new%20bitcoin%20by,to%20speed%20up%20mining%20operations.)
+
+<br>
+<br>
+
+### Minting NFT vs. Buying NFT
+
+Before you move on to making your claims on NFTs, it would be a wise idea to get the basics right!
+
+<br>
+
+> **You have two options to obtain an NFT**. You can either buy it from somebody or mint it. But **what does buying or minting NFTs even mean?** How are these two concepts different?
+
+> ✋ **Minting an NFT means creating something completely new. You can mint from a digital online project or convert existing items such as art, memes, poems, or music into NFTs.** On the contrary, buying an NFT requires an existing item that has been minted into an NFT.
+
+<br>
+
+### Minting an NFT: Explained 🍓
+
+<br>
+
+**Minting NFTs refers to the process of converting a digital file into a crypto collectible commodity or digital asset on the Ethereum Blockchain.** The minted NFT is then **stored in a decentralized database or distributed ledger forever**, and it can be edited, modified, or deleted.
+
+Alternatively, we can refer to NFT minting as the process used for transforming digital art or content into a part of the Ethereum Blockchain. The process is similar to minting metal coins and putting them into circulation.
+
+<br>
+
+<br>
+
+#### Credit Article: [Minting NFT vs. Buying NFT / nuwireinvestor](https://www.nuwireinvestor.com/minting-nft-vs-buying-nft/)
+
+<br>
+
+---
+
+<br>
+<br>
+
+# 🥭
+
+## Let's Begin!!
+
+#### Before starting create a new metamask account (as the one we will create here below will be a children account).
 
 ##### [MetaMask setup](https://www.creatokia.com/en/s/metamask-setup)
 
@@ -317,4 +395,17 @@ https://bitcoinsprice.org/price/eth/usd/0.1994
 <br>
 <br>
 
+#### 10.
+
 - Once you click on **Deploy NFT Collection Module**, it will open another window where you will be asked to accept the fake gaz fee, **confirm** and then wait.
+
+<br>
+
+[<img src="/src/img/create_nft_collection_confirmed-after-gaz.gif"/>]()
+
+> 🔴 **Permission and code** contain sensitive data.
+
+<br>
+<br>
+
+#### 11. Now the creation of the NFT collection is ready, you can start adding the artworks
