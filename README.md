@@ -292,7 +292,7 @@ https://bitcoinsprice.org/price/eth/usd/0.1994
 
 <br>
 
-#### In my case, I am are interested in the "NFT Collection " module
+#### In my case, I am interested in the "NFT Collection " module
 
 - So click on **NFT Collection**, and then click on the blue button **Setup Module**
 
