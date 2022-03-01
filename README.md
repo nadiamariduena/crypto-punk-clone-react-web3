@@ -98,6 +98,19 @@ The next step would be to click on ‘Complete Listing’. The marketplace calcu
 
 ---
 
+### Can NFT Metadata Be Changed?
+
+> The short answer is while it is possible to change the metadata of an NFT after it is minted, **this process can be pretty complicated and challenging to execute. You will need a deep understanding of NFTs and blockchain technology in order to do so**
+
+<br>
+
+##### Credit Article: [Can NFT Metadata Be Changed? / postergrind](https://postergrind.com/can-nft-metadata-be-changed/)
+
+<br>
+<br>
+
+---
+
 <br>
 
 ## Convert Ethereum
