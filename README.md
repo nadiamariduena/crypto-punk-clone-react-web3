@@ -94,6 +94,24 @@ The next step would be to click on ‘Complete Listing’. The marketplace calcu
 #### Credit Article: [Minting NFT vs. Buying NFT / nuwireinvestor](https://www.nuwireinvestor.com/minting-nft-vs-buying-nft/)
 
 <br>
+<br>
+
+---
+
+<br>
+
+## Convert Ethereum
+
+##### [Here](https://www.coinbase.com/converter/eth/usd)
+
+<br>
+
+[<img src="/src/img/convert-ETH-to-DOLLAR.gif"/>](https://www.coinbase.com/converter/eth/usd)
+
+<br>
+<br>
+<br>
+<br>
 
 ---
 
@@ -431,6 +449,8 @@ https://bitcoinsprice.org/price/eth/usd/0.1994
 
 #### 11. Now that the creation of the NFT collection is ready, you can start adding/minting the artworks
 
+<br>
+
 > **Minting NFTs refers to the process of converting a digital file into a crypto collectible commodity or digital asset on the Ethereum Blockchain.** The minted NFT is then **stored in a decentralized database or distributed ledger forever**, and it can be edited, modified, or deleted.
 
 <br>
@@ -446,6 +466,19 @@ https://bitcoinsprice.org/price/eth/usd/0.1994
 <br>
 <br>
 
-- Create a couple of them
+- Create a couple of them ✋
 
 [<img src="/src/img/minting-art-2_various.gif"/>]()
+
+<br>
+<br>
+
+- About the price: As you can see, one is at 8, another is at 13, it corresponds to **13 ETH** ✋
+
+> convert [Ethereum here](https://www.coinbase.com/converter/eth/usd)
+
+[<img src="/src/img/convert-ETH-to-DOLLAR.gif"/>](https://www.coinbase.com/converter/eth/usd)
+
+<br>
+
+> 🔴
