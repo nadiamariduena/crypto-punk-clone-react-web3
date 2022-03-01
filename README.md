@@ -429,4 +429,23 @@ https://bitcoinsprice.org/price/eth/usd/0.1994
 <br>
 <br>
 
-#### 11. Now the creation of the NFT collection is ready, you can start adding the artworks
+#### 11. Now that the creation of the NFT collection is ready, you can start adding/minting the artworks
+
+> **Minting NFTs refers to the process of converting a digital file into a crypto collectible commodity or digital asset on the Ethereum Blockchain.** The minted NFT is then **stored in a decentralized database or distributed ledger forever**, and it can be edited, modified, or deleted.
+
+<br>
+
+##### Credit Article: [Minting NFT vs. Buying NFT / nuwireinvestor](https://www.nuwireinvestor.com/minting-nft-vs-buying-nft/)
+
+<br>
+
+- Lets start by minting the first artwork ✋
+
+[<img src="/src/img/minting-art-1.gif"/>]()
+
+<br>
+<br>
+
+- Create a couple of them
+
+[<img src="/src/img/minting-art-2_various.gif"/>]()
