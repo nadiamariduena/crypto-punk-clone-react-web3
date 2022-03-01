@@ -55,5 +55,8 @@ export default App;
 ```
 
 <br>
+<br>
 
 #### Create the folder assets, there you will store the images related to the logo
+
+##### Download Assets: [here](https://drive.google.com/drive/folder...)
