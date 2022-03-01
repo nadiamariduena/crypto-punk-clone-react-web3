@@ -403,7 +403,7 @@ https://bitcoinsprice.org/price/eth/usd/0.1994
 
 [<img src="/src/img/create_nft_collection_confirmed-after-gaz.gif"/>]()
 
-> 🔴 **Permission and code** contain sensitive data.
+> 🔴 **Permissions and code** contains sensitive data.
 
 <br>
 <br>
