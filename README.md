@@ -296,4 +296,25 @@ https://bitcoinsprice.org/price/eth/usd/0.1994
 
 - So click on **NFT Collection**, and then click on the blue button **Setup Module**
 
+<br>
+
 [<img src="/src/img/create_nft_collection.gif"/>]()
+
+<br>
+<br>
+
+#### 9. Create a new Project
+
+<br>
+
+- Once you set up the image, the name, the symbol, and the royalty percentage, CLICK on: **Deploy NFT Collection Module**
+
+<br>
+<br>
+
+[<img src="/src/img/create_nft_collection2_confirm-gaz-fake-fee.gif"/>]()
+
+<br>
+<br>
+
+- Once you click on **Deploy NFT Collection Module**, it will open another window where you will be asked to accept the fake gaz fee, **confirm** and then wait.
