@@ -481,4 +481,14 @@ https://bitcoinsprice.org/price/eth/usd/0.1994
 
 <br>
 
-> 🔴
+> 🔴 Apparently, once you configure or mint your artwords you can never edit this **(but i must to do more research about it)**
+
+<br>
+
+### Can NFT Metadata Be Changed?
+
+> The short answer is while it is possible to change the metadata of an NFT after it is minted, **this process can be pretty complicated and challenging to execute. You will need a deep understanding of NFTs and blockchain technology in order to do so**
+
+<br>
+
+##### Read More here: [Can NFT Metadata Be Changed? / postergrind](https://postergrind.com/can-nft-metadata-be-changed/)
