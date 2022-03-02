@@ -1,5 +1,9 @@
 <br>
 
+#### Login in **ThirdWeb**: [Thirdweb](https://bit.ly/3EJLftx)
+
+#### Login [Opensea](https://testnets.opensea.io/)
+
 <br>
 
 [<img src="/src/img/minting-art-2_various.gif"/>](https://github.com/nadiamariduena/crypto-punk-clone-react-web3/tree/1-nft-mining-inting-metamask-setup-fake-eth)
@@ -350,6 +354,38 @@ function App() {
 export default App;
 ```
 
+#### this is the basic set up
+
+```javascript
+import Header from "./components/Header";
+import CollectionCard from "./components/CollectionCard";
+
+function App() {
+  return (
+    <div className="page">
+      <div className="app">
+        <Header />
+        <CollectionCard
+          id={0}
+          name={"bulle001"}
+          traits={[{ value: 8 }]} //price
+          image="https://ipfs.thirdweb.com/ipfs/QmQMu9v7UaLpNFtVswB1RewvjVxz8ko8fLBSZgv1Rf3McL/0.jpg"
+        />
+      </div>
+    </div>
+  );
+}
+
+export default App;
+```
+
+<br>
+<br>
+
+# Opensea 🌟
+
+> **OpenSea is an online marketplace that allows users to purchase, sell, and trade non-fungible tokens (NFTs). ...** Digital collectibles can either be bought directly by accepting the fixed price the seller set or by bidding on it (leaving the seller to either accept or decline the offer
+
 <br>
 <br>
 
@@ -359,7 +395,7 @@ export default App;
 
 - Check the tutorial [min 1:18:10](https://youtu.be/hhZtiytNaBQ)
 
-- Sign in in **ThirdWeb**: [Thirdweb](https://bit.ly/3EJLftx)
+- Sign in **ThirdWeb**: [Thirdweb](https://bit.ly/3EJLftx)
 
 - Copy your **wallet address**
 
@@ -403,3 +439,50 @@ export default App;
 # 🌈
 
 ### Styling the collection card
+
+[<img src="/src/img/basic-card-setup.gif"/>]()
+
+```scss
+.collectionCard {
+  color: rgb(253, 253, 253);
+  background-color: #1a1c1e;
+  border-radius: 20px;
+  overflow: hidden;
+  width: 300px;
+  height: 500px;
+  margin-right: 30px;
+
+  .details {
+    padding: 20px;
+  }
+
+  //@at-root
+  .name {
+    text-transform: capitalize;
+    font-size: 20px;
+    font-weight: 900;
+    .id {
+      color: #a1a5b0;
+      font-size: 18px;
+      font-weight: 600;
+    }
+  }
+  img {
+    width: 100%;
+  }
+  .priceContainer {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    object-fit: contain;
+    .wethImg {
+      height: 23px;
+      width: 15px;
+    }
+    .price {
+      margin-left: 5px;
+      font-weight: 600;
+    }
+  }
+}
+```

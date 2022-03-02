@@ -12,7 +12,7 @@ const CollectionCard = ({ id, name, traits, image }) => {
       </div>
       {/* ------ */}
       <div className="priceContainer">
-        <img src={wethIcon} alt={wethIcon} />
+        <img src={wethIcon} alt={wethIcon} className="wethImg" />
         {/* the traits is data coming from opensea, with the
         traits we will have access to all the traits or 
         properties from the "the minted art 
