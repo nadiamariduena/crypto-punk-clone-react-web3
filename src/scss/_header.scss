@@ -1,4 +1,10 @@
 .header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: pink;
+  height: 100px;
+  margin: 10px;
   h2 {
     color: rgb(0, 60, 255);
   }
@@ -6,5 +12,12 @@
   // LOGO
   .imgBox-punkLogo {
     width: 200px;
+  }
+  //
+  // searchbar
+  .searchBar {
+    background-color: #1c1c1e;
+    height: 50px;
+    flex: 1; //with this, the bar will dinamically stretch
   }
 }
