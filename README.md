@@ -280,3 +280,18 @@ export default Header;
 ```
 
 [<img src="/src/img/header-basic-done.jpg"/>]()
+
+<br>
+<br>
+
+# 🥭
+
+### The Slider / Gallery
+
+#### Create the <u>**collection card**</u> component:
+
+- CollectionCard.jsx
+
+```javascript
+
+```
