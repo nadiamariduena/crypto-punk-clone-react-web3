@@ -2,6 +2,7 @@ import React from "react";
 
 import punkaLogo from "../assets/header/cryptopunk-logo.png";
 import searchIcon from "../assets/header/search.png";
+import swithIcon from "../assets/header/theme-switch.png";
 
 //
 //
@@ -14,7 +15,7 @@ const Header = () => {
       {/*
        */}
       <div className="searchBar">
-        <div className="searchIconConatiner">
+        <div className="searchIconContainer">
           <img src={searchIcon} alt={searchIcon} />
         </div>
         <input className="searchInput" placeholder="Collection, item or user" />
@@ -25,6 +26,14 @@ const Header = () => {
         <p>Drops</p>
         <p>Marketplace</p>
         <p>Create</p>
+      </div>
+      {/*
+       */}
+
+      <div className="headerActions">
+        <div className="themeSwithContainer">
+          <img src={swithIcon} alt={swithIcon} />
+        </div>
       </div>
     </div>
   );
