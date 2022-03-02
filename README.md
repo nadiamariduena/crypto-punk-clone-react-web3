@@ -673,8 +673,7 @@ xhr.js:210 GET https://testnets-api.opensea.io/assets?asset_contract_contract_ad
 
 <br>
 
-[<img src="/src/img/id_collection-to-add-in-axios.gif
-"/>]()
+[<img src="/src/img/id_collection-to-add-in-axios.gif"/>]()
 
 <br>
 <br>
