@@ -392,3 +392,14 @@ export default App;
 - to get the image, right click on the image stored in opensea and choose **copy img address**
 
 [<img src="/src/img/preview-collection-card-process.gif"/>]()
+
+<br>
+
+> 🔴 **I presume this is only to style the cards and later on**, he will fetch and map the data like it should be done. BUt lets see, since i am new in web3 and nfts I have no idea how it will be done :)
+
+<br>
+<br>
+
+# 🌈
+
+### Styling the collection card
