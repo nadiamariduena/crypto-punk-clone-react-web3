@@ -697,3 +697,126 @@ useEffect(() => {
 <br>
 
 [<img src="/src/img/api_collection-success.gif"/>]()
+
+<br>
+<br>
+
+### Now that we have access to the data from the Opensea
+
+- store it in the state, so that we can pass it to other components
+
+```javascript
+      console.log(openseaData.data.assets);
+      // assign the state to the data
+      setPunkaListData(openseaData.data.assets);
+    };
+    return getMyNfts();
+  }, []);
+```
+
+<br>
+
+#### Create a new component and call it: "PunkList.jsx"
+
+- In this component you will map the data from the state, that is passed through props
+
+<br>
+
+```javascript
+import React from "react";
+import CollectionCard from "./CollectionCard";
+
+const PunkList = ({ punkaListData }) => {
+  return (
+    <div className="punkaLista">
+      👍{" "}
+      {punkaListData.map((punk) => (
+        <>
+          <div>
+            <CollectionCard
+              key={punk.token_id}
+              id={punk.token_id}
+              name={punk.name}
+              traits={punk.traits}
+              image={punk.image_original_url}
+            />
+          </div>
+        </>
+      ))}
+    </div>
+  );
+};
+
+export default PunkList;
+```
+
+<br>
+<br>
+
+#### Now import it inside the App.js
+
+- 🔴 I noticed that i made an error, the fetching had to be made in the app.js in this project, so i passed the fetching to the app instead of the **CollectionCard-jsx**
+
+```javascript
+import React, { useState, useEffect } from "react";
+import axios from "axios";
+
+//
+//
+import Header from "./components/Header";
+import CollectionCard from "./components/CollectionCard";
+import PunkList from "./components/PunkList";
+
+function App() {
+  const [punkaListData, setPunkaListData] = useState([]);
+  //
+  //
+  useEffect(() => {
+    const getMyNfts = async () => {
+      const openseaData = await axios.get(
+        `https://testnets-api.opensea.io/assets?asset_contract_address=0x20978D62136a8855E29e1Cc6b841f7dacaF578A2&order_direction=asc`
+      );
+      //
+      console.log(openseaData.data.assets);
+      // assign the state to the data
+      setPunkaListData(openseaData.data.assets);
+    };
+    return getMyNfts();
+  }, []);
+
+  return (
+    <div className="page">
+      <div className="app">
+        <Header />
+        <CollectionCard
+          id={0}
+          name={"bulle001"}
+          traits={[{ value: 8 }]}
+          image="https://ipfs.thirdweb.com/ipfs/QmQMu9v7UaLpNFtVswB1RewvjVxz8ko8fLBSZgv1Rf3McL/0.jpg"
+        />
+        <PunkList punkaListData={punkaListData} />
+      </div>
+    </div>
+  );
+}
+
+export default App;
+```
+
+<br>
+<br>
+
+## Result
+
+#### The data is being fetched but somehow the first property and "the one" the teacher is using in the video, isnt working:
+
+<br>
+
+- image_original_url (dont work, can be because it says **ipfs** and not **https** ?)
+
+- **the following works:** image_preview_url, image_thumbnail_url, image_url
+
+<br>
+<br>
+
+[<img src="/src/img/the data.gif"/>]()
