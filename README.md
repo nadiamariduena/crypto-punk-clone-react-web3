@@ -546,8 +546,27 @@ const [punkaListData, setPunkaListData] = useState([]);
 
 <br>
 
-#### Now we need to use the <u>useEffect</u> as we are going to make an API call
+#### Now we need to use the <u>useEffect</u>, as we are going to make an API call
 
 ```javascript
 useEffect(() => {}, []);
 ```
+
+<br>
+
+#### Insert the url inside the useEffect and the async {}
+
+```javascript
+useEffect(() => {
+  const getMyNfts = async () => {
+    //
+    const openseaData = await axios.get();
+
+    //
+  };
+}, []);
+```
+
+#### To retrieve assets from our API, call the /assets endpoint with the desired filter parameters.
+
+#### [Retrieving assets](https://docs.opensea.io/reference/getting-assets)

@@ -1,8 +1,15 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
+
 import wethIcon from "../assets/icons-eth/weth.png";
 // import ethIcon from "../assets/icons-eth/eth.png";
+//
+//
+const { REACT_API_OPENSEA } = process.env;
 
+//
+//
+//
 const CollectionCard = ({ id, name, traits, image }) => {
   //
   //
@@ -12,7 +19,9 @@ const CollectionCard = ({ id, name, traits, image }) => {
   useEffect(() => {
     const getMyNfts = async () => {
       //
-      const openseaData = await axios.get();
+      const openseaData = await axios.get(
+        "https://testnets.opensea.io/api/v1/assets"
+      );
 
       //
     };
