@@ -486,3 +486,68 @@ export default App;
   }
 }
 ```
+
+<br>
+<br>
+
+---
+
+<br>
+<br>
+
+# 🍨
+
+## Fetching the data
+
+#### Here we will be using the state for the fetching and also the useEffect
+
+```javascript
+import React, { useState, useEffect } from "react";
+//
+//
+```
+
+### [Axios](https://github.com/nadiamariduena/merging-back-frontend-mern2021/blob/master/z_AXIOS.md)
+
+**[READ MORE: Fetch and Axios](https://stackoverflow.com/questions/40844297/what-is-difference-between-axios-and-fetch)**
+
+#### We will be using using axios to fetch the data
+
+- install it
+
+```javascript
+npm i axios
+//  "axios": "^0.26.0",
+```
+
+<br>
+
+#### Now that you have axios installed, import it:
+
+```javascript
+import React, { useState, useEffect } from "react";
+import axios from "axios";
+```
+
+<br>
+
+#### Making the API call
+
+```javascript
+// const CollectionCard = ({ id, name, traits, image }) => {
+
+//
+const [punkaListData, setPunkaListData] = useState([]);
+//
+//
+```
+
+> We are going to store all our punkas here: **punkaListData ✋**
+
+<br>
+
+#### Now we need to use the <u>useEffect</u> as we are going to make an API call
+
+```javascript
+useEffect(() => {}, []);
+```

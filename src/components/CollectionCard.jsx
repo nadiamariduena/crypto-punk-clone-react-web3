@@ -1,8 +1,25 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
+import axios from "axios";
 import wethIcon from "../assets/icons-eth/weth.png";
 // import ethIcon from "../assets/icons-eth/eth.png";
 
 const CollectionCard = ({ id, name, traits, image }) => {
+  //
+  //
+  const [punkaListData, setPunkaListData] = useState([]);
+  //
+  //
+  useEffect(() => {
+    const getMyNfts = async () => {
+      //
+      const openseaData = await axios.get();
+
+      //
+    };
+  }, []);
+
+  //
+  //
   return (
     <div className="collectionCard">
       <img src={image} alt={name} />
