@@ -5,7 +5,7 @@ import wethIcon from "../assets/icons-eth/weth.png";
 // import ethIcon from "../assets/icons-eth/eth.png";
 //
 //
-const { REACT_API_OPENSEA } = process.env;
+const { REACT_API_OPENSEA_KEY } = process.env;
 
 //
 //
@@ -20,11 +20,12 @@ const CollectionCard = ({ id, name, traits, image }) => {
     const getMyNfts = async () => {
       //
       const openseaData = await axios.get(
-        "https://testnets.opensea.io/api/v1/assets"
+        `https://testnets-api.opensea.io/assets?asset_contract_address=long code here &order_direction=asc`
       );
-
       //
+      console.log(openseaData.data.assets);
     };
+    return getMyNfts();
   }, []);
 
   //

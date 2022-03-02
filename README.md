@@ -567,6 +567,98 @@ useEffect(() => {
 }, []);
 ```
 
-#### To retrieve assets from our API, call the /assets endpoint with the desired filter parameters.
+<br>
+
+##### To retrieve assets from our API, call the /assets endpoint with the desired filter parameters.
 
 #### [Retrieving assets](https://docs.opensea.io/reference/getting-assets)
+
+[<img src="/src/img/opensea1.gif"/>]()
+
+<br>
+
+---
+
+<br>
+
+# OpenSea API ✋
+
+##### [testing mode](https://docs.opensea.io/reference/retrieving-a-single-contract-testnets) 👍
+
+<br>
+
+```javascript
+//example assets
+https://testnets-api.opensea.io/api/v1/asset/0xb47e3cd837ddf8e4c57f05d70ab865de6e193bbb/1/
+
+//
+// example: Retrieving a single contract
+https://testnets-api.opensea.io/api/v1/asset_contract/0x06012c8cf97bead5deae237070f9587f8e7a266d
+```
+
+<br>
+
+> https://testnets-api.opensea.io/api/v1/asset_contract/**{asset_contract_address}**
+
+<br>
+
+> **To retrieve an individual from our API**, call the /**asset endpoint with the address of the asset's contract and the token id** 🔴. The endpoint will return an Asset Object.
+
+<br>
+
+---
+
+<br>
+
+#### OpenSea API
+
+- 🔴 not testing: [OpenSea API](https://docs.opensea.io/reference/retrieving-a-single-asset)
+
+```javascript
+//example assets
+https://api.opensea.io/api/v1/assets
+
+
+//
+// example: Retrieving a single contract
+https://api.opensea.io/api/v1/asset_contract/0x06012c8cf97bead5deae237070f9587f8e7a266d
+```
+
+<br>
+<br>
+
+---
+
+<br>
+
+#### The one I will be using will have one more property
+
+```javascript
+// before
+https://testnets-api.opensea.io/api/v1/asset_contract/0x06012c8cf97bead5deae237070f9587f8e7a266d
+
+//
+//   after
+https://testnets-api.opensea.io/assets?asset_contract_contract_address=0x06012c8cf97bead5deae237070f9587f8e7a266d
+```
+
+<br>
+
+### Getting this error
+
+```javascript
+Manifest: Line: 1, column: 1, Syntax error.
+xhr.js:210 GET https://testnets-api.opensea.io/assets?asset_contract_contract_address=undefined 400
+
+    at createError (createError.js:16)
+    at settle (settle.js:17)
+    at XMLHttpRequest.onloadend (xhr.js:66)
+```
+
+> Its saying that my key variable inside the **.env** is undefined 🔴
+
+<br>
+
+#### I Tested adding the long code and it worked, so there s some issue with the .env , anyway after i tested with the long code it showed me an array, but it was an empty array.
+
+> **The reason:**
