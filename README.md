@@ -322,3 +322,16 @@ const CollectionCard = ({ id, name, traits, image }) => {
 
 export default CollectionCard;
 ```
+
+<br>
+<br>
+
+### Import the component above, to the app.js
+
+- pass the props: **id, name, traits, image**
+
+- like so:
+
+```javascript
+
+```
