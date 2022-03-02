@@ -102,3 +102,40 @@ export default Header;
 <br>
 
 #### The search-bar
+
+```javascript
+<div className="searchBar">
+  <div className="searchIconContainer">
+    <img src={searchIcon} alt={searchIcon} />
+  </div>
+  <input className="searchInput" placeholder="Collection, item or user" />
+</div>
+```
+
+```scss
+// searchbar
+.searchBar {
+  background-color: #1c1c1e;
+  height: 50px;
+  flex: 1; //with this, the bar will dinamically stretch
+  display: flex;
+  align-items: center;
+  border-radius: 50px;
+  //
+  //
+  .searchIconContainer {
+    margin: 10px;
+  }
+  //
+  //
+  .searchInput {
+    background-color: transparent;
+    border: none;
+    width: 100%;
+  }
+}
+```
+
+<br>
+
+[<img src="/src/img/search-bar-progress.gif"/>]()
