@@ -382,3 +382,13 @@ export default App;
 <br>
 
 [<img src="/src/img/testopensea-success.gif"/>]()
+
+<br>
+<br>
+<br>
+
+#### Lets check what I have
+
+- to get the image, right click on the image stored in opensea and choose **copy img address**
+
+[<img src="/src/img/preview-collection-card-process.gif"/>]()
