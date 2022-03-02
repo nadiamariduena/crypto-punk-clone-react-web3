@@ -683,6 +683,7 @@ xhr.js:210 GET https://testnets-api.opensea.io/assets?asset_contract_contract_ad
 ```javascript
 useEffect(() => {
   const getMyNfts = async () => {
+    // the collection id
     const openseaData = await axios.get(
       `https://testnets-api.opensea.io/assets?asset_contract_address=0x20978D62136a8855E29e1Cc6b841f7dacaF578A2&order_direction=asc`
     );
