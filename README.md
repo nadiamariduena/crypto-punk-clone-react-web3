@@ -598,6 +598,12 @@ https://testnets-api.opensea.io/api/v1/asset_contract/0x06012c8cf97bead5deae2370
 
 <br>
 
+<br>
+
+[<img src="/src/img/retrieving-options.gif"/>]()
+
+<br>
+
 > https://testnets-api.opensea.io/api/v1/asset_contract/**{asset_contract_address}**
 
 <br>
@@ -629,9 +635,7 @@ https://api.opensea.io/api/v1/asset_contract/0x06012c8cf97bead5deae237070f9587f8
 
 ---
 
-<br>
-
-#### The one I will be using will have one more property
+#### The one I will be using, will have one more property
 
 ```javascript
 // before
@@ -659,6 +663,37 @@ xhr.js:210 GET https://testnets-api.opensea.io/assets?asset_contract_contract_ad
 
 <br>
 
-#### I Tested adding the long code and it worked, so there s some issue with the .env , anyway after i tested with the long code it showed me an array, but it was an empty array.
+#### I Tested adding the long code and it worked, so there s some issue with the .env . Anyway.. after i tested with the long code it showed me an array, but it was an empty array.
 
-> **The reason:**
+<br>
+
+# 🌈
+
+> **The reason:** The teacher didnt add the correct api reference, as he was grabbing the **wallet id** instead of the collection id
+
+<br>
+
+[<img src="/src/img/id_collection-to-add-in-axios.gif
+"/>]()
+
+<br>
+<br>
+
+### This works!!!
+
+```javascript
+useEffect(() => {
+  const getMyNfts = async () => {
+    const openseaData = await axios.get(
+      `https://testnets-api.opensea.io/assets?asset_contract_address=0x20978D62136a8855E29e1Cc6b841f7dacaF578A2&order_direction=asc`
+    );
+    //
+    console.log(openseaData.data.assets);
+  };
+  return getMyNfts();
+}, []);
+```
+
+<br>
+
+[<img src="/src/img/api_collection-success.gif"/>]()
