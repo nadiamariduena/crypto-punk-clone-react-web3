@@ -6,7 +6,7 @@ function App() {
     <div className="page">
       <div className="app">
         <Header />
-        <CollectionCard />
+        <CollectionCard id={0} name={""} traits={[{ value: 7 }]} image="" />
       </div>
     </div>
   );

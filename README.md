@@ -333,5 +333,52 @@ export default CollectionCard;
 - like so:
 
 ```javascript
+import Header from "./components/Header";
+import CollectionCard from "./components/CollectionCard";
 
+function App() {
+  return (
+    <div className="page">
+      <div className="app">
+        <Header />
+        <CollectionCard id={0} name={""} traits={[{ value: 7 }]} image="" />
+      </div>
+    </div>
+  );
+}
+
+export default App;
 ```
+
+<br>
+<br>
+
+### 🍍 To grab the image
+
+<br>
+
+- Check the tutorial [min 1:18:10](https://youtu.be/hhZtiytNaBQ)
+
+- Sign in in **ThirdWeb**: [Thirdweb](https://bit.ly/3EJLftx)
+
+- Copy your **wallet address**
+
+<br>
+
+- Go to **https://testnets.opensea.io/** and past it there like you see it in Gif.
+
+<br>
+
+[<img src="/src/img/opensea1.gif"/>]()
+
+<br>
+
+> 🔴 If there is any issue (if the artwort dont appear like in the gif), make sure your **metamask is correctly connected**: [Why-can-t-I-see-my-NFTs-in-my-account](https://support.opensea.io/hc/en-us/articles/1500003338421-Why-can-t-I-see-my-NFTs-in-my-account-)
+
+<br>
+
+#### ✋ After that, log out and then log in, then click on the profile logo. (sometimes it does it automatically)
+
+<br>
+
+[<img src="/src/img/testopensea-success.gif"/>]()
