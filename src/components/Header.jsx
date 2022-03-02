@@ -35,6 +35,9 @@ const Header = () => {
           <img src={swithIcon} alt={swithIcon} />
         </div>
       </div>
+      {/*
+       */}
+      <div className="loginButton">Gettin</div>
     </div>
   );
 };
