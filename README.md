@@ -868,3 +868,19 @@ return (
 #### Style it: flex the column to a row
 
 [<img src="/src/img/basic-cards.webp"/>]()
+
+```scss
+.punkaLista {
+  cursor: pointer;
+  display: flex;
+  overflow: scroll; ✋
+  margin-top: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #fff;
+  //
+  //
+  &::-webkit-scrollbar {
+    display: none;  ✋
+  }
+}
+```
