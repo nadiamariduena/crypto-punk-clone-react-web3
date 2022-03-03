@@ -820,3 +820,40 @@ export default App;
 <br>
 
 [<img src="/src/img/the data.gif"/>]()
+
+<br>
+<br>
+
+### Now we dont need the hardcoded data so delete it
+
+```javascript
+// before
+
+return (
+  <div className="page">
+    <div className="app">
+      <Header />
+      <CollectionCard
+        id={0}
+        name={"bulle001"}
+        traits={[{ value: 8 }]}
+        image="https://ipfs.thirdweb.com/ipfs/QmQMu9v7UaLpNFtVswB1RewvjVxz8ko8fLBSZgv1Rf3McL/0.jpg"
+      />
+      <PunkList punkaListData={punkaListData} />
+    </div>
+  </div>
+);
+
+//
+//
+// AFTER
+return (
+  <div className="page">
+    <div className="app">
+      <Header />
+
+      <PunkList punkaListData={punkaListData} />
+    </div>
+  </div>
+);
+```
