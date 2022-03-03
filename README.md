@@ -884,3 +884,8 @@ return (
   }
 }
 ```
+
+<br>
+<br>
+
+### Create the main/hero or banner
