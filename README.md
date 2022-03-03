@@ -863,5 +863,8 @@ return (
 ```
 
 <br>
+<br>
 
-### Lets style it and flex the column to a row
+#### Style it: flex the column to a row
+
+[<img src="/src/img/basic-cards.webp"/>]()
