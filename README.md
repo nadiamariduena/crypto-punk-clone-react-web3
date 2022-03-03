@@ -824,7 +824,11 @@ export default App;
 <br>
 <br>
 
-### Now we dont need the hardcoded data so delete it
+# 🐖
+
+> I know this is not a blog, but my sister is visiting me and I didnt see her for 4 years so I had to make a pause for a couple of hours.
+
+### Now we don't need the hardcoded data so delete it
 
 ```javascript
 // before
@@ -857,3 +861,7 @@ return (
   </div>
 );
 ```
+
+<br>
+
+### Lets style it and flex the column to a row
