@@ -9,12 +9,12 @@ const Main = ({ activePunk }) => {
       <div className="mainContent">
         <div className="punkaHighLight">
           <div className="punkaContainer">
-            <img className="selectedPunk" src={activePunk.image_url} alt="" />
+            {/* <img className="selectedPunk" src={activePunk.image_url} alt="" /> */}
           </div>
         </div>
         {/* --- */}
         <div className="punkDetails" style={{ color: "#fff" }}>
-          <div className="title">{activePunk.name}</div>
+          {/* <div className="title">{activePunk.name}</div> */}
           <span className="itemNumber">.#3</span>
         </div>
         <div className="owner">
@@ -28,19 +28,19 @@ const Main = ({ activePunk }) => {
             </div>
             {/* instagram */}
             <div className="ownerLink">
-              <img
-                src={TiSocialInstagramCircular}
-                alt={TiSocialInstagramCircular}
-              />
+              <h3>
+                <TiSocialInstagramCircular />
+              </h3>
             </div>
             <div className="ownerLink">
-              <img
-                src={TiSocialFacebookCircular}
-                alt={TiSocialFacebookCircular}
-              />
+              <h3>
+                <TiSocialFacebookCircular />
+              </h3>
             </div>
             <div className="ownerLink">
-              <img src={TiSocialGithubCircular} alt={TiSocialGithubCircular} />
+              <h3>
+                <TiSocialGithubCircular />
+              </h3>
             </div>
           </div>
         </div>
