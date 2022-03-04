@@ -906,3 +906,61 @@ return (
 <br>
 
 - For that we will be **using states**
+
+<vr>
+
+#### Go to the App and create a state that will handle the change of state
+
+- we will start at **(0)**
+
+```javascript
+//  App.js
+function App() {
+  const [punkaListData, setPunkaListData] = useState([]);
+  //
+  const [selectedPunka, setSelectedPunka] = useState(0); ✋
+
+  //
+```
+
+#### pass the state props (so that we bring the state above to the other components)
+
+```javascript
+//Still on the  App.js
+<PunkList punkaListData={punkaListData} setSelectedPunka={setSelectedPunka} />✋
+```
+
+<br>
+
+#### Now we are ready to bring the state to the children, which in this case are: PunkList.jsx and Main.jsx
+
+<br>
+
+- In **PunkList.jsx** we will be adding a **onClick** event to make the image **behave** when we click on it.
+
+<br>
+
+- For that you need to pass the freshly created state that handle the **changes**: <u>setSelectedPunka</u> ✋
+
+```javascript
+// while in PunkList.jsx
+const PunkList = ({ punkaListData, setSelectedPunka }) => {
+```
+
+<br>
+
+#### NOw add the "On click" event
+
+```javascript
+const PunkList = ({ punkaListData, setSelectedPunka }) => {
+  return (
+    <div className="punkaLista">
+      {punkaListData.map((punk) => (
+        //
+        // here
+        <div onClick={() => setSelectedPunka(punk.token_id)}>
+
+        //
+        //
+         <CollectionCard
+```
