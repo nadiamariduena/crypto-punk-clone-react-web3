@@ -9,12 +9,13 @@ const Main = ({ activePunk }) => {
       <div className="mainContent">
         <div className="punkaHighLight">
           <div className="punkaContainer">
+            hello img
             {/* <img className="selectedPunk" src={activePunk.image_url} alt="" /> */}
           </div>
         </div>
         {/* --- */}
         <div className="punkDetails" style={{ color: "#fff" }}>
-          {/* <div className="title">{activePunk.name}</div> */}
+          hello {/* <div className="title">{activePunk.name}</div> */}
           <span className="itemNumber">.#3</span>
         </div>
         <div className="owner">

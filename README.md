@@ -889,3 +889,9 @@ return (
 <br>
 
 ### Create the main/hero or banner
+
+#### Some icons assets
+
+##### [install react icons](https://react-icons.github.io/react-icons/)
+
+##### [social icons](https://react-icons.github.io/react-icons/search?q=social)
