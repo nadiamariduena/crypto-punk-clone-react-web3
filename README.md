@@ -901,11 +901,7 @@ return (
 
 ## Create the main/hero or banner
 
-#### In this section I will create the Banner
-
-<br>
-
-- The main picture of the banner will be connected with the ones we have inside the **PunkList.jsx**, so that when we click one of the pictures, it will automatically put it on the banner.
+#### The main picture of the banner will be connected with the ones we have inside the <u>**PunkList.jsx**</u> , so that when we click one of the pictures, it will automatically put it on the banner.
 
 <br>
 
