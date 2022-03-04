@@ -9,9 +9,9 @@ import PunkList from "./components/PunkList";
 import Main from "./components/Main";
 
 function App() {
-  const [punkaListData, setPunkaListData] = useState([]);
+  const [punkListData, setPunkListData] = useState([]);
   //
-  const [selectedPunka, setSelectedPunka] = useState(0);
+  const [selectedPunk, setSelectedPunk] = useState(0);
 
   //
   //
@@ -24,7 +24,7 @@ function App() {
       //
       console.log(openseaData.data.assets);
       // assign the state to the data
-      setPunkaListData(openseaData.data.assets);
+      setPunkListData(openseaData.data.assets);
     };
     return getMyNfts();
   }, []);
@@ -33,11 +33,16 @@ function App() {
     <div className="page">
       <div className="app">
         <Header />
-        <Main />
-        <PunkList
-          punkaListData={punkaListData}
-          setSelectedPunka={setSelectedPunka}
-        />
+
+        {punkListData.length > 0 && (
+          <>
+            <Main punkListData={punkListData} selectedPunk={selectedPunk} />
+            <PunkList
+              punkListData={punkListData}
+              setSelectedPunk={setSelectedPunk}
+            />
+          </>
+        )}
       </div>
     </div>
   );

@@ -36,7 +36,8 @@
       flex: 0.75;
       //
       .title {
-        font-size: 96px;
+        text-transform: capitalize;
+        font-size: calc(30px + 1vmin);
         font-weight: 800;
       }
       .itemNumber {
@@ -68,6 +69,9 @@
         flex: 1;
         .ownerNameAndHandle {
           flex: 1;
+          h6 {
+            font-size: calc(7px + 1vmin);
+          }
           .ownerHandle {
             color: red;
           }

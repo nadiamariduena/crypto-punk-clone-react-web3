@@ -899,7 +899,7 @@ return (
 
 # 🍨
 
-## Create the main/hero or banner
+## Create the main or banner
 
 #### The main picture of the banner will be connected with the ones we have inside the <u>**PunkList.jsx**</u> , so that when we click one of the pictures, it will automatically put it on the banner.
 
@@ -911,7 +911,11 @@ return (
 
 #### Go to the App and create a state that will handle the change of state
 
+<br>
+
 - we will start at **(0)**
+
+<br>
 
 ```javascript
 //  App.js
@@ -922,6 +926,8 @@ function App() {
 
   //
 ```
+
+<br>
 
 #### pass the state props (so that we bring the state above to the other components)
 
@@ -949,7 +955,9 @@ const PunkList = ({ punkaListData, setSelectedPunka }) => {
 
 <br>
 
-#### NOw add the "On click" event
+#### Now add the "On click" event and attach the state <u>setSelectedPunka</u>
+
+<br>
 
 ```javascript
 const PunkList = ({ punkaListData, setSelectedPunka }) => {
@@ -963,4 +971,201 @@ const PunkList = ({ punkaListData, setSelectedPunka }) => {
         //
         //
          <CollectionCard
+```
+
+<br>
+<br>
+
+#### Once done, pass the prop state to the Main.jsx too
+
+<br>
+
+```javascript
+// Main.jsx
+const Main = ({ selectedPunka, punkaListData }) => {
+
+```
+
+<br>
+
+#### Now create a new state in the Main.jsx
+
+- This one will also start from **punkaListData[0]**
+
+```javascript
+// require it
+import React, { useState, useEffect } from "react";
+//
+// then use it
+// ✋ here we connect the data from the opensea to the new state
+const [activePunka, setActivePunka] = useState(punkaListData[0]);
+```
+
+<br>
+
+### The useEffect
+
+```javascript
+const Main = ({ selectedPunka, punkaListData }) => {
+const [activePunka, setActivePunka] = useState(punkaListData[0]);
+
+//----------- useEffect ------------
+//
+  useEffect(() => {
+    setActivePunka(punkaListData[selectedPunka]);
+  }, [punkaListData, selectedPunka]);
+  // This means that the page will update, if the punkaListData or selectedPunka changes, because we dont want to refresh it so to see the changes, we want to see t in real time ✋
+  //
+//----------- useEffect ------------
+//
+```
+
+<br>
+
+#### 🔴 At this point we will be getting an error because of this line:
+
+```javascript
+// Main.jsx
+const [activePunka, setActivePunka] = useState(punkaListData[0]);
+```
+
+<br>
+
+#### the reason, is because we are not passing the prop back into the parent here:
+
+- here i already passed the props that will be used in the Main.jsx
+
+<br>
+
+```javascript
+// App.js
+//
+//
+<Main punkaListData={punkaListData} /> ✋
+```
+
+<br>
+
+### Now use the actual data
+
+- Right now we are using local images or dummy data to see the progress, but now we need to grab the actual data coming from the api
+
+```javascript
+//      BEFORE
+<div className="punkaContainer">
+<img className="selectedPunk" src={ethIcon} alt="" />
+  {/* <img className="selectedPunk" src={activePunk.image_url} alt="" />  */}
+</div>
+
+//
+//
+//      AFTER
+<div className="punkaContainer">
+  {/* <img className="selectedPunk" src={ethIcon} alt="" /> */}
+  <img className="selectedPunk" src={activePunka.image_url} alt="" />
+</div>
+```
+
+<br>
+
+### 🔴 After uncovering the img, we will have an error
+
+- Its says the following
+
+```javascript
+The above error occurred in the <Main> component
+
+Consider adding an error boundary to your tree to customize error handling behavior.
+Visit https://reactjs.org/link/error-boundaries to learn more about error boundaries.
+```
+
+<br>
+
+#### 🌈
+
+#### The reason:
+
+> You need an error handler in case something goes wrong with the **API CALL**
+
+<br>
+
+- To prevent that, wrap the **Main.jsx and the PunkList.jsx** inside **{}** this will handle the situation in case we have less > than 0 in our opensea data: **punkaListData**, it will show nothing but if we have more than 0, it will show the content of the curly brackets
+
+```javascript
+{
+  punkaListData.length > 0 && (
+    <>
+      <Main punkaListData={punkaListData} />
+      <PunkList
+        punkaListData={punkaListData}
+        setSelectedPunka={setSelectedPunka}
+      />
+    </>
+  );
+}
+```
+
+<br>
+
+<br>
+
+```javascript
+// App.js
+//
+//        BEFORE
+return (
+  <div className="page">
+    <div className="app">
+      <Header />
+      <Main punkaListData={punkaListData} />
+      <PunkList
+        punkaListData={punkaListData}
+        setSelectedPunka={setSelectedPunka}
+      />
+    </div>
+  </div>
+);
+//
+//          AFTER
+return (
+  <div className="page">
+    <div className="app">
+      <Header />
+
+      {punkaListData.length > 0 && (
+        <>
+          <Main punkaListData={punkaListData} />
+          <PunkList
+            punkaListData={punkaListData}
+            setSelectedPunka={setSelectedPunka}
+          />
+        </>
+      )}
+    </div>
+  </div>
+);
+```
+
+<br>
+
+### 🔴 After that we will continue to have the error due to the img
+
+<br>
+
+👾
+
+> Errors are a good thing to become better at what you do, they are terrifying, annoying and can make you feel like the lowest being on earth, but the more errors you know and the reasons why, the better it will be. 👾
+
+<br>
+
+#### SO the error was due to the fact that the teacher FORGOT to pass the prop <u>selectedPunk</u> inside the <u>Main.jsx</u>
+
+<br>
+
+- I have notice that this type of issues happens when you dont structure or concentrate into automatically linking the props to their respective components, for example here in this error, this error ocurred because he created the props then went on into styling the components, and after a while when going back to the functionality, **he forgot this props**. I ve notice few teachers in youtube do it in such way, which endup confusing newbies like me.
+
+##### In conclusion don't focus on the aesthetic so much in the beginning unless you have a (great memory), make it work first.
+
+```javascript
+
 ```
