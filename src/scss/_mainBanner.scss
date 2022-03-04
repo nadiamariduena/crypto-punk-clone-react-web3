@@ -19,6 +19,12 @@
         display: flex;
         margin-right: 20px;
         border: 1px solid #fff;
+        //
+        .selectedPunk {
+          object-fit: contain;
+          //   max-width: min(30vw, 40vh);
+          max-height: 30vh;
+        }
       }
     }
     //
@@ -28,6 +34,10 @@
       flex-direction: column;
       justify-content: space-between;
       flex: 0.75;
+      .title {
+        font-size: 96px;
+        font-weight: 800;
+      }
     }
   }
 }

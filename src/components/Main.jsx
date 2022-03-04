@@ -1,4 +1,5 @@
 import React from "react";
+import ethIcon from "../assets/icons-eth/eth.png";
 import { TiSocialInstagramCircular } from "react-icons/ti";
 import { TiSocialFacebookCircular } from "react-icons/ti";
 import { TiSocialGithubCircular } from "react-icons/ti";
@@ -10,12 +11,14 @@ const Main = ({ activePunk }) => {
         <div className="punkaHighLight">
           <div className="punkaContainer">
             hello img
-            {/* <img className="selectedPunk" src={activePunk.image_url} alt="" /> */}
+            <img className="selectedPunk" src={ethIcon} alt="" />
+            {/* <img className="selectedPunk" src={activePunk.image_url} alt="" />  */}
           </div>
         </div>
         {/* --- */}
         <div className="punkDetails" style={{ color: "#fff" }}>
-          hello {/* <div className="title">{activePunk.name}</div> */}
+          {/* <div className="title">{activePunk.name}</div> */}
+          <div className="title">hello</div>
           <span className="itemNumber">.#3</span>
         </div>
         <div className="owner">
