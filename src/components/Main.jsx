@@ -23,7 +23,7 @@ const Main = ({ activePunk }) => {
         </div>
         <div className="owner">
           <div className="ownerImageContainer">
-            {/* <img src={} alt={} /> */}
+            <img src={ethIcon} alt={ethIcon} />
           </div>
           <div className="ownerDetails">
             <div className="ownerNameAndHandle">
