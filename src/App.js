@@ -11,6 +11,10 @@ import Main from "./components/Main";
 function App() {
   const [punkaListData, setPunkaListData] = useState([]);
   //
+  const [selectedPunka, setSelectedPunka] = useState(0);
+
+  //
+  //
   //
   useEffect(() => {
     const getMyNfts = async () => {
@@ -30,7 +34,10 @@ function App() {
       <div className="app">
         <Header />
         <Main />
-        <PunkList punkaListData={punkaListData} />
+        <PunkList
+          punkaListData={punkaListData}
+          setSelectedPunka={setSelectedPunka}
+        />
       </div>
     </div>
   );

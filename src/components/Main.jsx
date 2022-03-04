@@ -1,10 +1,14 @@
-import React from "react";
+import React, { useState } from "react";
 import ethIcon from "../assets/icons-eth/eth.png";
 import { TiSocialInstagramCircular } from "react-icons/ti";
 import { TiSocialFacebookCircular } from "react-icons/ti";
 import { TiSocialGithubCircular } from "react-icons/ti";
 
-const Main = ({ activePunk }) => {
+const Main = ({ selectedPunka, punkaListData }) => {
+  const [activePunka, setActivePunka] = useState(punkaListData[0]);
+
+  //
+  //
   return (
     <div className="main">
       <div className="mainContent">

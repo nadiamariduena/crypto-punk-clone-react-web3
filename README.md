@@ -888,10 +888,25 @@ return (
 <br>
 <br>
 
-### Create the main/hero or banner
-
-#### Some icons assets
+##### Some icons assets
 
 ##### [install react icons](https://react-icons.github.io/react-icons/)
 
 ##### [social icons](https://react-icons.github.io/react-icons/search?q=social)
+
+<br>
+<br>
+
+# 🍨
+
+## Create the main/hero or banner
+
+#### In this section I will create the Banner
+
+<br>
+
+- The main picture of the banner will be connected with the ones we have inside the **PunkList.jsx**, so that when we click one of the pictures, it will automatically put it on the banner.
+
+<br>
+
+- For that we will be **using states**
