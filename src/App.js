@@ -6,6 +6,7 @@ import axios from "axios";
 import Header from "./components/Header";
 import CollectionCard from "./components/CollectionCard";
 import PunkList from "./components/PunkList";
+import Main from "./components/Main";
 
 function App() {
   const [punkaListData, setPunkaListData] = useState([]);
@@ -28,7 +29,7 @@ function App() {
     <div className="page">
       <div className="app">
         <Header />
-
+        <Main />
         <PunkList punkaListData={punkaListData} />
       </div>
     </div>
