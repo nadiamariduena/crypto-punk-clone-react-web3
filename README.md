@@ -134,3 +134,15 @@ const openseaData = await axios.get(
   `https://testnets-api.opensea.io/api/v1/assets?asset_contract_address=0x8Cbb2AE3eB35fB23f2BE1E388Faf6544a9D9fcC8&order_direction=asc&limit=4`
 );
 ```
+
+<br>
+
+# 🍨
+
+- You can test it here and enjoy the **image bug**:
+
+##### https://a-rainbow-of-fugly.netlify.app/
+
+<br>
+
+[<img src="/src/img/cors-solution.gif"/>](https://a-rainbow-of-fugly.netlify.app/)
