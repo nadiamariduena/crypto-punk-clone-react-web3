@@ -37,6 +37,28 @@
 
 ## ⚠️ To be continue... 🐄
 
-### Deploying the app (regardless of the bug)
+<br>
+<br>
 
-- When deploying the app regardless of the bug, I encountered another problem
+---
+
+<br>
+
+<br>
+
+### 🔴 Deploying the app (regardless of the bug)
+
+- When deploying the app regardless of the bug, **I encountered another problem**, it was impossible to see the components where the 🌟 magic happens.
+
+#### the error
+
+```javascript
+hardcore-snyder-3fbe84.netlify.app/:1 Access to XMLHttpRequest at 'https://testnets-api.opensea.io/assets?asset_contract_address=0x8Cbb2AE3eB35fB23f2BE1E388Faf6544a9D9fcC8&order_direction=asc&limit=4' from origin 'https://hardcore-snyder-3fbe84.netlify.app' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+testnets-api.opensea.io/assets?asset_contract_address=0x8Cbb2AE3eB35fB23f2BE1E388Faf6544a9D9fcC8&order_direction=asc&limit=4:1 Failed to load resource: net::ERR_FAILED
+createError.js:16 Uncaught (in promise) Error: Network Error
+    at e.exports (main.9cfd9428.js:2)
+    at XMLHttpRequest.y.onerror (main.9cfd9428.js:2)
+/favicon.ico:1 Failed to load resource: the server responded with a status of 404 ()
+```
+
+#### I must to admit that <u>CORS</u> issues are a pain...
