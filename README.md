@@ -110,3 +110,9 @@ When do we need to whitelist a domain?
 <br>
 
 ##### So i read again that part of the documentation [Retrieving events - Testnets](https://docs.opensea.io/reference/retrieving-events-testnets)
+
+- SO I added this:
+
+```javascript
+api/v1/
+```
