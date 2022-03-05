@@ -61,4 +61,14 @@ createError.js:16 Uncaught (in promise) Error: Network Error
 /favicon.ico:1 Failed to load resource: the server responded with a status of 404 ()
 ```
 
+<br>
+
 #### I must to admit that <u>CORS</u> issues are a pain...
+
+<br>
+
+[<img src="/src/img/cors-issue1.gif"/>]()
+
+<br>
+
+#### So after having spend a couple of hours looking for an answer (for the image bug) i felt discouraged but i also felt like i still had some energy to make a last search, so i started to look for CORS and opensea related articles, but i didnt find anything, just other people having the same issue.
