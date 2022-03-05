@@ -10,9 +10,11 @@
 
 <br>
 
-##### [ image_original_url:](https://docs.opensea.io/reference/asset-object) An image for the item. Note that this is the cached URL we store on our end. The original image url is image_original_url
+#### [ image_original_url:](https://docs.opensea.io/reference/asset-object) An image for the item. Note that this is the cached URL we store on our end. The original image url is image_original_url
 
 <br>
+
+[<img src="/src/img/image_original_url__about.gif"/>](https://docs.opensea.io/reference/asset-object)
 
 <br>
 

@@ -1186,7 +1186,7 @@ return (
 
 <br>
 
-[<img src="/src/img/image_original_url__about.gif"/>]()
+[<img src="/src/img/image_original_url__about.gif"/>](https://docs.opensea.io/reference/asset-object)
 
 <br>
 
