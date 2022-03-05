@@ -72,3 +72,31 @@ createError.js:16 Uncaught (in promise) Error: Network Error
 <br>
 
 #### So after having spend a couple of hours looking for an answer (for the image bug) i felt discouraged but i also felt like i still had some energy to make a last search, so i started to look for CORS and opensea related articles, but i didnt find anything, just other people having the same issue.
+
+<br>
+
+### Until i found the following articles:
+
+##### 1. [cors on uploaded site only](https://stackoverflow.com/questions/70497930/cors-on-uploaded-site-only)
+
+> CORS blocked your POST request. You need to whitelist your domain (https://mthree.netlify.app) at the server end.
+
+##### Take a look at what actually CORS is https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS
+
+<br>
+
+##### 2. [What is domain whitelisting? How to whitelist a domain?](https://support.chargebee.com/support/solutions/articles/237999-what-is-domain-whitelisting-how-to-whitelist-a-domain-#:~:text=A%20whitelist%20is%20a%20list,pages%20to%20your%20domain%2Fwebsite.)
+
+> A whitelist is a list of domains approved for authorized access to data. In Chargebee a domain would need to be whitelisted if you wish to send secure subscription/payment related information while redirecting from the Chargebee pages to your domain/website.
+
+<br>
+
+### 👾 then when i read this, something came to my mind
+
+When do we need to whitelist a domain?
+
+**Checkout Page V3** - The Chargebee instance object is used to set callbacks for checkout, self-serve portals, and to fetch cart and product data related to checkout.To ensure that you get all callbacks you setup, you would need to whitelist your domain in Chargebee. Here’s more on this.
+
+👾
+
+<br>
