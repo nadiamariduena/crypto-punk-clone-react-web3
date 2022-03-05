@@ -17,7 +17,8 @@ function App() {
   //
   const [selectedPunk, setSelectedPunk] = useState(0);
   //
-  //
+  //        `https://testnets-api.opensea.io/api/v1/assets?asset_contract_address=0x8Cbb2AE3eB35fB23f2BE1E388Faf6544a9D9fcC8&order_direction=asc&limit=4`
+
   //
   useEffect(() => {
     const getMyNfts = async () => {

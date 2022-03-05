@@ -2,6 +2,8 @@
 
 ### WORK IN PROGRESS ⛏️
 
+> In this tutorial you will learn how to set up:
+
 <br>
 
 ---
@@ -34,3 +36,7 @@
 <br>
 
 ## ⚠️ To be continue... 🐄
+
+### Deploying the app (regardless of the bug)
+
+- When deploying the app regardless of the bug, I encountered another problem
