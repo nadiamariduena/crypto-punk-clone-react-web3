@@ -1176,9 +1176,13 @@ return (
 
 ### ⚠️ The code is working but it has a bug, and due to that i will spend the entire day trying to figure out the reasons:
 
-<brs>
+<br>
 
 - for now I only now that the **image_original_url** that the teacher uses in this tutorial, dont work.
+
+<br>
+
+#### [ image_original_url:](https://docs.opensea.io/reference/asset-object) An image for the item. Note that this is the cached URL we store on our end. The original image url is image_original_url
 
 <br>
 

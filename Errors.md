@@ -10,6 +10,12 @@
 
 <br>
 
+##### [ image_original_url:](https://docs.opensea.io/reference/asset-object) An image for the item. Note that this is the cached URL we store on our end. The original image url is image_original_url
+
+<br>
+
+<br>
+
 > **I really think it has to do with this** line of code:
 
 ```javascript
