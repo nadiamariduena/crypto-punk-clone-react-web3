@@ -100,3 +100,5 @@ When do we need to whitelist a domain?
 👾
 
 <br>
+
+#### I remember that when looking for a solution to solve the image issue, i read the documentation to manipulate the api line, without success of course!, but i thought what if there is just a piece of code missing, what if i dont have to try the whole backend setup to just make the cors error go away? I know its maybe wrong to do it in such way, but i sincerely felt exhausted but i had so much curiosity :)
