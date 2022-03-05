@@ -1169,3 +1169,41 @@ return (
 ```javascript
 
 ```
+
+<br>
+<br>
+<br>
+
+### ⚠️ The code is working but it has a bug, and due to that i will spend the entire day trying to figure out the reasons:
+
+<brs>
+
+- for now I only now that the **image_original_url** that the teacher uses in this tutorial, dont work.
+
+<br>
+
+> **I really think it has to do with this** line of code:
+
+```javascript
+image_original_url: "ipfs://QmQQVwdSn..etc
+```
+
+<br>
+
+- Because every time i try to add the **image_original_url**, it shows me the following:
+
+<br>
+
+[<img src="/src/img/IPFS_probable-issue.gif"/>]()
+
+<br>
+
+#### What is IPFS?
+
+- Its the first time i see this, so I hat no idea
+
+> IPFS is a distributed system for storing and accessing files, websites, applications, and data.
+
+-
+
+<br>

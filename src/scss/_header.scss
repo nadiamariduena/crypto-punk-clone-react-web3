@@ -16,7 +16,7 @@
   //
   // searchbar
   .searchBar {
-    background-color: #1c1c1e;
+    background-color: #d2d2e475;
     height: 50px;
     flex: 1; //with this, the bar will dinamically stretch
     display: flex;
@@ -34,7 +34,7 @@
       border: none;
       width: 100%;
       outline: none;
-      color: #eee;
+      color: rgb(78, 78, 78);
       font-size: 0.9em;
     }
   }
@@ -42,6 +42,9 @@
   //
   .headerItems {
     display: flex;
+    color: rgba(49, 49, 49, 0.534);
+    font-size: calc(9px + 1vmin);
+    font-weight: 600;
     p {
       margin: 0 10px;
     }
@@ -57,7 +60,7 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      background-color: #1c1c1e;
+      background-color: #1c1c1e13;
       border-radius: 50px;
       padding: 15px;
       object-fit: contain;
@@ -71,10 +74,18 @@
   //GETTIN BTN
 
   .loginButton {
-    background: linear-gradient(to right, #59f9b7, #66feea);
+    background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);
     padding: 10px 40px;
     border-radius: 50px;
     color: #070707;
+    transition: all 0.3s ease-in-out;
+    &:hover {
+      // https://www.joshwcomeau.com/animation/css-transitions/
+      transition: transform 750ms;
+      will-change: transform;
+      transform: translateX(5px);
+      background-image: linear-gradient(120deg, #f6d365 0%, #fda085 100%);
+    }
   }
 
   //

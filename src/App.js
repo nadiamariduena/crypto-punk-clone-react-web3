@@ -4,14 +4,14 @@ import axios from "axios";
 //
 //
 import Header from "./components/Header";
-import CollectionCard from "./components/CollectionCard";
 import PunkList from "./components/PunkList";
+// import CollectionCard from "./components/CollectionCard";
+
 import Main from "./components/Main";
 
 function App() {
   const [punkListData, setPunkListData] = useState([]);
   //
-  const [selectedPunk, setSelectedPunk] = useState(0);
 
   //
   //
@@ -19,7 +19,8 @@ function App() {
   useEffect(() => {
     const getMyNfts = async () => {
       const openseaData = await axios.get(
-        `https://testnets-api.opensea.io/assets?asset_contract_address=0x20978D62136a8855E29e1Cc6b841f7dacaF578A2&order_direction=asc`
+        // permalink
+        `https://testnets-api.opensea.io/assets?asset_contract_address=0x8Cbb2AE3eB35fB23f2BE1E388Faf6544a9D9fcC8&order_direction=asc`
       );
       //
       console.log(openseaData.data.assets);
@@ -33,16 +34,8 @@ function App() {
     <div className="page">
       <div className="app">
         <Header />
-
-        {punkListData.length > 0 && (
-          <>
-            <Main punkListData={punkListData} selectedPunk={selectedPunk} />
-            <PunkList
-              punkListData={punkListData}
-              setSelectedPunk={setSelectedPunk}
-            />
-          </>
-        )}
+        <Main />
+        <PunkList punkListData={punkListData} />
       </div>
     </div>
   );

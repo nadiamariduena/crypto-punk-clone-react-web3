@@ -1,5 +1,8 @@
 .main {
   max-height: 50vh;
+  //m
+  //m
+  //m
 
   .mainContent {
     display: flex;
@@ -7,6 +10,7 @@
     border-bottom: 1px solid #fff;
     //
     //
+    // AVATAR large image
     .punkaHighLight {
       flex: 0.25;
       display: flex;
@@ -22,79 +26,13 @@
         //
         .selectedPunk {
           object-fit: contain;
-          //   max-width: min(30vw, 40vh);
+          // max-width: min(30vw, 40vh);
           max-height: 30vh;
         }
       }
     }
     //
     //
-    .punkDetails {
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      flex: 0.75;
-      //
-      .title {
-        text-transform: capitalize;
-        font-size: calc(30px + 1vmin);
-        font-weight: 800;
-      }
-      .itemNumber {
-        color: #a1a5b0;
-        font-size: 72px;
-        align-self: start;
-      }
-    }
-    //
-    .owner {
-      display: flex;
-      margin: 10px 0;
-      height: 50px;
-      .ownerImageContainer {
-        height: 50px;
-        width: 50px;
-        border-radius: 50%;
-        overflow: hidden;
-        object-fit: contain;
-        img {
-          height: 100%;
-          width: 100%;
-        }
-      }
-      //
-      .ownerDetails {
-        display: flex;
-        align-items: center;
-        flex: 1;
-        .ownerNameAndHandle {
-          flex: 1;
-          h6 {
-            font-size: calc(7px + 1vmin);
-          }
-          .ownerHandle {
-            color: red;
-          }
-        }
-        //icons
-        .ownerLink {
-          padding: 12px;
-          border-radius: 50px;
-          height: 50px;
-          width: 50px;
-          border: 1px solid #fff;
-          margin: 0 0 0 10px;
-          text-align: center;
-          img {
-            height: 100%;
-            width: 100%;
-          }
-          .socialIcons {
-            height: 100%;
-            width: 100%;
-          }
-        }
-      }
-    }
   }
+  //
 }
