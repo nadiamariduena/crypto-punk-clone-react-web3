@@ -1,7 +1,8 @@
 import React from "react";
 
+import { FiSearch } from "react-icons/fi";
 import punkaLogo from "../assets/header/cryptopunk-logo.png";
-import searchIcon from "../assets/header/search.png";
+// import searchIcon from "../assets/header/search.png";
 import swithIcon from "../assets/header/theme-switch.png";
 
 //
@@ -16,7 +17,10 @@ const Header = () => {
        */}
       <div className="searchBar">
         <div className="searchIconContainer">
-          <img src={searchIcon} alt={searchIcon} />
+          {/* <img src={searchIcon} alt={searchIcon} /> */}
+          <h3>
+            <FiSearch className="socialIcons" />
+          </h3>
         </div>
         <input className="searchInput" placeholder="Collection, item or user" />
       </div>

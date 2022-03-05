@@ -16,16 +16,26 @@
   //
   // searchbar
   .searchBar {
-    background-color: #d2d2e475;
-    height: 50px;
+    background-color: rgba(255, 255, 255, 0.342);
+    padding: 8px 0;
     flex: 1; //with this, the bar will dinamically stretch
     display: flex;
     align-items: center;
     border-radius: 50px;
+    overflow: hidden;
+
     //
     //
     .searchIconContainer {
-      margin: 10px;
+      padding: 5px 5px;
+      margin: 0 10px 0 25px;
+      text-align: center;
+
+      .socialIcons {
+        height: 100%;
+        width: 100%;
+        color: rgb(255, 255, 255);
+      }
     }
     //
     //
@@ -34,15 +44,19 @@
       border: none;
       width: 100%;
       outline: none;
-      color: rgb(78, 78, 78);
+      color: #fff;
       font-size: 0.9em;
+      &::placeholder {
+        color: #fff;
+      }
     }
   }
   //
   //
   .headerItems {
     display: flex;
-    color: rgba(49, 49, 49, 0.534);
+    color: rgb(255, 255, 255);
+
     font-size: calc(9px + 1vmin);
     font-weight: 600;
     p {

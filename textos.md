@@ -74,7 +74,7 @@ const PunkList = ({ punkListData, setSelectedPunk }) => {
             id={punk.token_id}
             name={punk.name}
             traits={punk.traits}
-            image={punk.image_url}
+            image={punk.image_original_url}
           />
         </div>
       ))}
@@ -143,9 +143,22 @@ import { TiSocialInstagramCircular } from "react-icons/ti";
 import { TiSocialFacebookCircular } from "react-icons/ti";
 import { TiSocialGithubCircular } from "react-icons/ti";
 
-const Main = ({ selectedPunk, punkListData }) => {
-  const [activePunk, setActivePunk] = useState(punkListData[0]);
+/*
 
+
+
+
+
+*/
+
+const Main = ({ selectedPunk, punkListData }) => {
+
+  //
+  //
+  const [activePunk, setActivePunk] = useState(punkListData[0]);
+//
+  //
+  //
   useEffect(() => {
     setActivePunk(punkListData[selectedPunk]);
   }, [punkListData, selectedPunk]);
@@ -157,6 +170,7 @@ const Main = ({ selectedPunk, punkListData }) => {
   return (
     <div className="main">
       <div className="mainContent">
+       {/* -- */}
         <div className="punkaHighLight">
           <div className="punkaContainer">
             <a
@@ -165,7 +179,7 @@ const Main = ({ selectedPunk, punkListData }) => {
               rel="noopener noreferrer"
               target="_blank"
             >
-              <img className="selectedPunk" src={activePunk.image_url} alt="" />
+              <img className="selectedPunk" src={activePunk.image_preview_url} alt="" />
             </a>
           </div>
         </div>

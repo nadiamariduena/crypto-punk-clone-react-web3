@@ -1,5 +1,13 @@
 <br>
 
+### WORK IN PROGRESS ⛏️
+
+<br>
+
+---
+
+<br>
+
 #### Login in **ThirdWeb**: [Thirdweb](https://bit.ly/3EJLftx)
 
 #### Login [Opensea](https://testnets.opensea.io/)
@@ -1172,9 +1180,13 @@ return (
 
 <br>
 <br>
+
+---
+
+<br>
 <br>
 
-### ⚠️ The code is working but it has a bug, and due to that i will spend the entire day trying to figure out the reasons:
+### ⚠️ The app is working but it has a bug, and due to that i will spend the entire day trying to figure out the reasons:
 
 <br>
 
@@ -1266,3 +1278,251 @@ Why do we say "content" instead of "files" or "web pages" here? Because a conten
 <br>
 
 - [How do I fix ERR_UNKNOWN_URL_SCHEME when trying to GET an ipfs url?](https://ethereum.stackexchange.com/questions/120132/how-do-i-fix-err-unknown-url-scheme-when-trying-to-get-an-ipfs-url)
+
+<br>
+<br>
+
+---
+
+<br>
+<br>
+
+## Back to the point where I added the "click event"
+
+```javascript
+  <div onClick={() => console.log(punk.token_id)}>
+
+```
+
+#### Here:
+
+```javascript
+return (
+  <div className="punkaLista">
+    {punkListData.map((punk) => (
+      <div key={punk.token_id}>
+        ✋{" "}
+        <div onClick={() => console.log(punk.token_id)}>
+          <CollectionCard
+            id={punk.token_id}
+            name={punk.name}
+            traits={punk.traits}
+            image={punk.image_preview_url}
+          />
+        </div>
+      </div>
+    ))}
+  </div>
+);
+```
+
+<br>
+
+#### So as you can see, when I click on the first picture its grabing the exact img, in this case its the 4th image, so everything is good.
+
+[<img src="/src/img/click-event.gif"/>]()
+
+<br>
+
+#### The next step will be to make the connection between the the img header and the images in the Punklist component, so that when i click on the girl image i will see the girl in the img of the header.
+
+- Go back to the App.js and add the state that is going to help us to do it
+
+<br>
+
+```javascript
+const [selectedPunk, setSelectedPunk] = useState(0);
+```
+
+- pass the prop linked to that state
+
+```javascript
+// app.js
+<PunkList punkListData={punkListData} setSelectedPunk={setSelectedPunk} />
+```
+
+<br>
+
+#### Now go back to the PunkList.jsx and pass it there
+
+```javascript
+// PunkList.jsx
+const PunkList = ({ punkListData, setSelectedPunk }) => {
+
+```
+
+<br>
+
+##### and used it here:
+
+- Replace the console.log for the state: **setSelectedPunk**
+
+```javascript
+// PunkList.jsx
+        <div key={punk.token_id}>
+        ✋  <div onClick={() => setSelectedPunk(punk.token_id)}>
+            <CollectionCard
+```
+
+<br>
+<br>
+
+#### Now go to the main and pass the prop there too
+
+```javascript
+// Main.jsx
+const Main = ({ selectedPunk, punkListData }) => {
+```
+
+- Here as you can see, we are grabbing the **selectedPunk** and not the **setSelectedPunk**, its obvious as you can notice it in the Appy when we pass both of them here, but i find it important to mention it as it can be confusing
+
+<br>
+
+```javascript
+ <Main punkListData={punkListData} selectedPunk={selectedPunk} />
+            <PunkList
+              punkListData={punkListData}
+              setSelectedPunk={setSelectedPunk}
+            />
+```
+
+<br>
+
+##### Back to the Main.jsx
+
+- After you grabbed the prop here below:
+
+```javascript
+const Main = ({ selectedPunk, punkListData }) => {
+
+```
+
+<br>
+
+##### use it here:
+
+- As you can see, we are telling it to grab the first item 0 from the **punkListData**, this is now inside the variables **activePunk, setActivePunk**..so from now on they will carry the data of the punks
+
+```javascript
+// Main.jsx
+const [activePunk, setActivePunk] = useState(punkListData[0]);
+```
+
+<br>
+
+### 🌟
+
+here is where the magic happens
+
+##### from there, we can use the two 'variables / states' inside the useEffect
+
+- selectedPunk, punkListData
+
+```javascript
+//
+useEffect(() => {
+  setActivePunk(punkListData[selectedPunk]);
+}, [punkListData, selectedPunk]);
+//
+```
+
+<br>
+
+#### Now that we have the data converted into the new state, use it:
+
+```javascript
+// Main.jsx
+//
+// return (
+    <div className="main">
+      <div className="mainContent">
+        {/* -- */}
+        <div className="punkaHighLight">
+          <div className="punkaContainer">
+            <a
+              style={{ color: "#029ad6", fontWeight: "600" }}
+              href={activePunk.permalink}
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              <img
+                className="selectedPunk"
+                src={activePunk.image_preview_url}
+                alt=""
+              />
+            </a>
+          </div>
+        </div>
+        {/* --- */}
+        <div className="punkDetails" style={{ color: "#fff" }}>
+          <div className="title">{activePunk.name}</div>
+          <span className="itemNumber">.#{activePunk.token_id}</span>
+        </div>
+        {/* --------- */}
+        <div className="owner">
+          <div className="ownerImageContainer">img</div>
+          {/*  */}
+          <div className="ownerImageContainer">
+            <img src={activePunk.owner.profile_img_url} alt={activePunk.name} />
+          </div>
+          <div className="ownerDetails">
+            <div className="ownerNameAndHandle">
+              <h6>{activePunk.owner.address}</h6>
+
+              <div className="ownerHandle">
+                <a
+                  style={{ color: "#029ad6", fontWeight: "600" }}
+                  href={activePunk.permalink}
+                  rel="noopener noreferrer"
+                  target="_blank"
+                >
+                  @{activePunk.owner.user.username}
+                </a>
+              </div>
+            </div>
+
+            {/* ICONS*/}
+            <div className="ownerLink">
+              <h3>
+                <TiSocialInstagramCircular className="socialIcons" />
+              </h3>
+            </div>
+            <div className="ownerLink">
+              <h3>
+                <TiSocialFacebookCircular className="socialIcons" />
+              </h3>
+            </div>
+            <div className="ownerLink">
+              <h3>
+                <TiSocialGithubCircular className="socialIcons" />
+              </h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+```
+
+<br>
+
+#### 🔴
+
+#### I couldn't find the source of the error but i really suspect the <u>Ipfs</u> and the <u>API</u> , as i tried to play a bit with the options to see the different outcomes.
+
+<br>
+
+- ✋ Here you can see that when i click on the image, the number changes but the image isn't.
+
+<br>
+
+[<img src="/src/img/issue-image.gif"/>]()
+
+<br>
+<br>
+
+[<img src="/src/img/the-issue-ipfs2.gif"/>]()
+
+<br>
+
+## ⚠️ To be continue... 🐄
