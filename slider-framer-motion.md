@@ -234,6 +234,45 @@ import React, { useState, useRef, useEffect } from "react";
 
 <br>
 
-```javascript
+#### Add the useEffect
 
+- lets console.log to see the stuff we need to calculate it
+
+```javascript
+// 1
+const carousel = useRef();
+//
+//  2 ✋
+useEffect(() => {
+  // we will use the ref to see it on the console
+  console.log(carousel);
+}, []);
+//
 ```
+
+<br>
+
+### Go to the console on the browser and open the arrow, you will something like this:
+
+<br>
+
+- SO here we can see that we got back an **object** with the **current** of the div carousel
+
+[<img src="/src/img/useefefct-carousel-console.gif"/>]()
+
+<br>
+
+#### Now we have to add the dot to access it:
+
+```javascript
+useEffect(() => {
+  console.log(carousel.current);
+}, []);
+//
+```
+
+##### result
+
+<br>
+
+[<img src="/src/img/useefefct-carousel-console-current.gif"/>]()

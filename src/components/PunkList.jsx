@@ -8,6 +8,9 @@ const PunkList = ({ punkListData, setSelectedPunk }) => {
   const [width, setWidth] = useState(0);
   const carousel = useRef();
   //
+  useEffect(() => {
+    console.log(carousel.current);
+  }, []);
   //
   return (
     <motion.div ref={carousel} className="carousel">
