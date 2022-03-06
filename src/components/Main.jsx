@@ -24,7 +24,6 @@ const Main = ({ selectedPunk, punkListData }) => {
         <div className="punkaHighLight">
           <div className="punkaContainer">
             <a
-              style={{ color: "#029ad6", fontWeight: "600" }}
               href={activePunk.permalink}
               rel="noopener noreferrer"
               target="_blank"
