@@ -13,6 +13,11 @@
 #### This is a basic app, that has no real functionality other than: <u>fetching</u> the data from [opensea](https://opensea.io/) ✋
 
 <br>
+<br>
+
+[<img src="/src/img/preview-with-bug.gif"/>]()
+
+<br>
 
 ---
 
