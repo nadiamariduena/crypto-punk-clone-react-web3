@@ -343,3 +343,32 @@ useEffect(() => {
 <br>
 
 [<img src="/src/img/fullwidth-and-currentWidth.gif"/>]()
+
+<br>
+<br>
+
+> now take that and **deduct: 1400 - 649 = 751**, but as i said it can vary depending of the size
+
+### 🌈 Now with that logic, we can go to _set_ the set state that will handle the change
+
+```javascript
+useEffect(() => {
+ ✋ setWidth(carousel.current.scrollWidth - carousel.current.offsetWidth);
+}, []);
+```
+
+### Then add it to the constrains
+
+```javascript
+ <motion.div
+        drag="x"
+        dragConstraints={{ right: 0, left: -width }}
+        className="inner-carousel-punkList"
+      >
+```
+
+<br>
+
+#### result
+
+[<img src="/src/img/result-slider.gif"/>]()

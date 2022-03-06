@@ -10,13 +10,14 @@ const PunkList = ({ punkListData, setSelectedPunk }) => {
   //
   useEffect(() => {
     console.log(carousel.current.scrollWidth, carousel.current.offsetWidth);
+    setWidth(carousel.current.scrollWidth - carousel.current.offsetWidth);
   }, []);
   //
   return (
     <motion.div ref={carousel} className="carousel">
       <motion.div
         drag="x"
-        dragConstraints={{ right: 0 }}
+        dragConstraints={{ right: 0, left: -width }}
         className="inner-carousel-punkList"
       >
         {punkListData.map((punk) => (
