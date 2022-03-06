@@ -2,7 +2,22 @@
 
 ### WORK IN PROGRESS ⛏️
 
-> In this tutorial you will learn how to set up:
+<br>
+<br>
+
+# 🌈
+
+> **In this tutorial you will learn** how to get comfortable with creating NFT's in testing mode (using specific networks for that matter in [metamask](https://metamask.io/) & [thirdweb](https://thirdweb.com/dashboard) ), you will also learn hot to create **fake ethereum** (with [faucets.chain](faucets.chain.link/rinkeby) ) to be used in your **tests** apps.
+
+<br>
+
+##### [signup for thirweb](https://thirdweb.com/start?utm_source=youtube&utm_medium=social&utm_campaign=clever+programmer&utm_id=clever+programmer)
+
+<br>
+
+#### This is a basic app, that has no real functionality other than: <u>fetching</u> the data from [opensea](https://opensea.io/) ✋
+
+<br>
 
 <br>
 
