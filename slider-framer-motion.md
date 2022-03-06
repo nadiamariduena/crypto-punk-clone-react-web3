@@ -102,3 +102,47 @@ return (
   }
 }
 ```
+
+<br>
+
+### ⚠️ add the pointer events: none here below
+
+```scss
+// _collectionCard.scss
+//
+//
+.collectionCard {
+  background-color: black;
+  color: rgb(253, 253, 253);
+  // background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);
+  border-radius: 20px;
+  overflow: hidden;
+  width: 300px;
+  height: 500px;
+  margin-right: 30px;
+  // border: 1px solid #fff;
+  img {
+    width: 100%;
+    pointer-events: none; ✋
+  }
+```
+
+<br>
+
+### without pointer Events
+
+- its faisable but complicated when grabing the card
+
+<br>
+
+[<img src="/src/img/without-pointerEvents.gif"/>]()
+
+<br>
+
+### with pointer Events
+
+- You can smoothly slide it
+
+<br>
+
+[<img src="/src/img/with-pointerEvents.gif"/>]()
