@@ -15,7 +15,7 @@
 <br>
 <br>
 
-[<img src="/src/img/preview-with-bug.gif"/>]()
+[<img src="/src/img/preview-with-bug.gif"/>](https://a-rainbow-of-fugly.netlify.app/)
 
 <br>
 
@@ -60,10 +60,23 @@
 #### Click on the arrow to unfold 🖐️
 
 <details>
-<summary>  Deploying the app (regardless of the bug)</summary>  
-   
-    
+<summary>  Deploying the app (regardless of the bug)</summary>
+
 <br>
+<br>
+
+#### The Img Bug
+
+[Read More here](https://github.com/nadiamariduena/crypto-punk-clone-react-web3/issues/1)
+
+<br>
+
+---
+
+<br>
+
+#### CORS
+
 <br>
 
 - When deploying the app regardless of the bug, **I encountered another problem**, it was impossible to see the components where the 🌟 magic happens.
