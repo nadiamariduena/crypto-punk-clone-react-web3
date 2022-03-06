@@ -178,3 +178,62 @@ drag = "x";
 
 <br>
 <br>
+
+##### To handle the calculation to drag to the left, we will need to set up a state that will check the width of the slide
+
+```javascript
+import React, { useState, useRef, useEffect }
+//
+//
+//
+const PunkList = ({ punkListData, setSelectedPunk }) => {
+  //
+  //
+  const [width, setWidth] = useState(0); ✋
+```
+
+<br>
+<br>
+
+### Now we need to grab the width of the parent:
+
+<br>
+
+- For that we will need to use **useRef** on the parent, so start by importing it here:
+
+```javascript
+import React, { useState, useRef, useEffect } from "react";
+```
+
+<br>
+
+- Now declare it:
+
+```javascript
+  const [width, setWidth] = useState(0);
+  const carousel = useRef(); ✋
+```
+
+ <br>
+
+#### Use it:
+
+```javascript
+ <motion.div ref={carousel}  className="carousel">
+```
+
+<br>
+
+### 👾 The logical part 👾
+
+<br>
+
+#### Add the useEffect
+
+- Here we will calculate what needs to be calculated to figure out when the slider has to stop
+
+<br>
+
+```javascript
+
+```

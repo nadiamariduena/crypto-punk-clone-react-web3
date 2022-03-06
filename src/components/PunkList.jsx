@@ -1,15 +1,16 @@
-import React from "react";
+import React, { useState, useRef, useEffect } from "react";
 import { motion } from "framer-motion";
 import CollectionCard from "./CollectionCard";
 
 const PunkList = ({ punkListData, setSelectedPunk }) => {
   //
   //
-
+  const [width, setWidth] = useState(0);
+  const carousel = useRef();
   //
   //
   return (
-    <motion.div className="carousel">
+    <motion.div ref={carousel} className="carousel">
       <motion.div
         drag="x"
         dragConstraints={{ right: 0 }}
