@@ -276,3 +276,19 @@ useEffect(() => {
 <br>
 
 [<img src="/src/img/useefefct-carousel-console-current.gif"/>]()
+
+<br>
+
+### Now go to the _elements_ in the console, and open up the body
+
+<br>
+
+- Open the arrows until you reach the **inner-carousel**, once there, **slide a bit the carousel** and see how the numbers go up and down depending on the direction you slide it.
+
+<br>
+
+> ##### ⚠️ IN the tutorial, he will leave it at -2236.13 px but I think it has to do with the size of the screen you have and the preferences your preferences for the slider
+
+<br>
+
+[<img src="/src/img/useefefct-carousel-console-curren2.gif"/>]()
