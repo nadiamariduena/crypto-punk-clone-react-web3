@@ -146,3 +146,35 @@ return (
 <br>
 
 [<img src="/src/img/with-pointerEvents.gif"/>]()
+
+<br>
+<br>
+
+#### Its working but there is not constraint, as you can see in the image above
+
+- But first lets see what is making it move to the X direction (left to right):
+
+```javascript
+drag = "x";
+```
+
+<br>
+<br>
+
+#### Now lets add the constraint
+
+- We could add this:
+
+```javascript
+ drag="x"
+        dragConstraints={{ right: 0 }}
+```
+
+##### result
+
+- As you can see, when I drag it to the **right**, it will push it to the 0 position (**which is the beginnning**) , but when i drag it to the left, it goes all the way **without ending**
+
+[<img src="/src/img/drag-constrains-to-right.gif"/>]()
+
+<br>
+<br>

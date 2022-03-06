@@ -10,7 +10,11 @@ const PunkList = ({ punkListData, setSelectedPunk }) => {
   //
   return (
     <motion.div className="carousel">
-      <motion.div drag="x" className="inner-carousel-punkList">
+      <motion.div
+        drag="x"
+        dragConstraints={{ right: 0 }}
+        className="inner-carousel-punkList"
+      >
         {punkListData.map((punk) => (
           <motion.div key={punk.token_id}>
             <div onClick={() => setSelectedPunk(punk.token_id)}>
