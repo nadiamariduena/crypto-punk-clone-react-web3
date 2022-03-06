@@ -9,7 +9,7 @@ const PunkList = ({ punkListData, setSelectedPunk }) => {
   const carousel = useRef();
   //
   useEffect(() => {
-    console.log(carousel.current);
+    console.log(carousel.current.scrollWidth, carousel.current.offsetWidth);
   }, []);
   //
   return (

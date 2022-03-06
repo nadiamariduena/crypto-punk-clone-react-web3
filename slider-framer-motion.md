@@ -287,8 +287,59 @@ useEffect(() => {
 
 <br>
 
-> ##### ⚠️ IN the tutorial, he will leave it at -2236.13 px but I think it has to do with the size of the screen you have and the preferences your preferences for the slider
+> ##### ⚠️ IN the [video / 21:22](https://youtu.be/W0bEL93tt4k), he will leave it at -2236.13 px, but I think it has to do with the size of the screen you have and the preferences (your preferences for the slider)
 
 <br>
 
 [<img src="/src/img/useefefct-carousel-console-curren2.gif"/>]()
+
+<br>
+
+#### But if we get the width like so
+
+```javascript
+useEffect(() => {
+  console.log(carousel.current.scrollWidth);
+}, []);
+```
+
+<br>
+
+#### its going to give us the full size of the width
+
+> 1400
+
+[<img src="/src/img/width.gif"/>]()
+
+##### but if you slide, you will see its no way that
+
+```javascript
+user-select: none; touch-action: pan-y; transform: translateX(-1398.31px) translateY(0px) translateZ(0px);
+```
+
+<br>
+
+# 🐖
+
+#### so if we follow the instructions after what he has on his screen, we will take the 3300 and deduct from it:
+
+- the fullwidth **minus** what is showing on the screen
+
+> So **current.scrollWidth** is going to give us the fullwidth and **carousel.current** will give you the current of the screen
+
+<br>
+
+```javascript
+useEffect(() => {
+  console.log(carousel.current.scrollWidth, carousel.current.offsetWidth);
+}, []);
+//
+```
+
+<br>
+
+#### Here you see it in action
+
+<br>
+
+[<img src="/src/img/fullwidth-and-currentWidth.gif"/>]()
