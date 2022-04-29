@@ -27,7 +27,7 @@ function App() {
         `https://testnets-api.opensea.io/api/v1/assets?asset_contract_address=0x8Cbb2AE3eB35fB23f2BE1E388Faf6544a9D9fcC8&order_direction=asc&limit=4`
       );
       //to check the array of data
-      // console.log(openseaData.data.assets);
+      console.log(openseaData.data.assets);
 
       // assign the state to the data
       setPunkListData(openseaData.data.assets);

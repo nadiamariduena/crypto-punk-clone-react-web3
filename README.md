@@ -57,7 +57,7 @@
 
 <br>
 
-#### Click on the arrow to unfold 🖐️
+#### Click on the arrow to unfold 🖐️ 🌈
 
 <details>
 <summary>  Deploying the app (regardless of the bug)</summary>
