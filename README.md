@@ -1,6 +1,6 @@
 ## WORK IN PROGRESS ⛏️ ✋
 
-# 🌈
+#🚀 🌈
 
 > **In this tutorial you will learn** how to get comfortable with creating NFT's in testing mode (using specific networks for that matter in [metamask](https://metamask.io/) & [thirdweb](https://thirdweb.com/dashboard) ), you will also learn hot to create **fake ethereum** (with [faucets.chain](faucets.chain.link/rinkeby) ) to be used in your **tests** apps.
 
